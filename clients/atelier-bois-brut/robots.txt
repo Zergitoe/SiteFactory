@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer les dossiers techniques
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://atelier-bois-brut.fr/sitemap.xml
