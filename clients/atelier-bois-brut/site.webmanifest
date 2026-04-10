@@ -1,0 +1,16 @@
+{
+  "name": "Atelier Bois Brut",
+  "short_name": "Atelier Bois",
+  "description": "Ébéniste à Mortagne-au-Perche depuis 1978. Mobilier sur-mesure et escaliers en bois massif français. Label EPV, devis gratuit sous 5 jours.\n\n",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6B4423",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
