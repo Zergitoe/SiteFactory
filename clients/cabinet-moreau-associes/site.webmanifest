@@ -1,0 +1,16 @@
+{
+  "name": "Cabinet Moreau & Associés",
+  "short_name": "Cabinet More",
+  "description": "Cabinet Moreau & Associés, avocats en droit des affaires à Paris 8e. Fusions-acquisitions, droit des sociétés et contentieux commercial pour PME et ETI. Consultation sur rendez-vous.\n",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
