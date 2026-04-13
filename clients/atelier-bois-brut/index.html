@@ -282,7 +282,7 @@ img{max-width:100%;height:auto;display:block}
 .site-header{position:sticky;top:0;z-index:1000;background:rgba(250,250,245,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--secondary-dark);transition:var(--transition)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;max-width:1200px;margin:0 auto}
 .header-logo{display:flex;align-items:center;gap:12px;cursor:pointer}
-.header-logo img{height:48px;width:auto}
+.header-logo img{height:56px;width:auto}
 .header-logo-text{font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--primary-dark);line-height:1.2}
 .header-logo-sub{font-size:0.7rem;color:var(--text-muted);font-family:var(--font-body);letter-spacing:0.05em;text-transform:uppercase}
 .header-nav{display:flex;align-items:center;gap:4px}
@@ -319,12 +319,12 @@ img{max-width:100%;height:auto;display:block}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
 .hero-trust{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .hero-stars{display:flex;gap:2px;color:#D4A017}
-.hero-stars i[data-lucide]{width:16px;height:16px;fill:#D4A017}
+.hero-stars svg{width:16px;height:16px;fill:#D4A017;stroke:#D4A017}
 .hero-trust-text{font-size:0.85rem;color:var(--text-muted)}
-.hero-image{position:relative;border-radius:var(--radius-organic);overflow:hidden;box-shadow:var(--shadow-lg)}
+.hero-image{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
 .hero-image img{width:100%;height:460px;object-fit:cover;transition:transform 0.6s ease}
 .hero-image:hover img{transform:scale(1.03)}
-.hero-image-badge{position:absolute;bottom:20px;left:20px;background:rgba(255,253,248,0.92);backdrop-filter:blur(8px);padding:10px 18px;border-radius:var(--radius-sm);display:flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:600;color:var(--primary-dark);box-shadow:var(--shadow-sm)}
+.hero-image-badge{position:absolute;bottom:20px;left:20px;background:rgba(255,253,248,0.92);backdrop-filter:blur(8px);padding:10px 18px;border-radius:var(--radius-sm);display:flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:600;color:var(--primary-dark);box-shadow:var(--shadow-sm);z-index:2}
 .hero-image-badge i[data-lucide]{width:16px;height:16px;color:var(--accent)}
 
 /* Wave separator */
@@ -393,7 +393,7 @@ section{padding:80px 0}
 .testimonial-card{min-width:360px;max-width:400px;scroll-snap-align:start;background:var(--white);padding:32px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);border-left:4px solid var(--accent);flex-shrink:0;transition:var(--transition)}
 .testimonial-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
 .testimonial-stars{display:flex;gap:2px;margin-bottom:16px;color:#D4A017}
-.testimonial-stars i[data-lucide]{width:16px;height:16px;fill:#D4A017}
+.testimonial-stars svg{width:16px;height:16px;fill:#D4A017;stroke:#D4A017}
 .testimonial-quote{font-size:0.95rem;color:var(--text-light);line-height:1.7;margin-bottom:20px;font-style:italic}
 .testimonial-author{display:flex;align-items:center;gap:12px}
 .testimonial-avatar{width:44px;height:44px;border-radius:var(--radius-organic);background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-heading);font-size:1.1rem;font-weight:600;flex-shrink:0}
@@ -579,7 +579,8 @@ section{padding:80px 0}
 .page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--bg-warm),var(--bg),var(--bg-green));z-index:0}
 .page-hero .container{position:relative;z-index:1}
 .page-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.page-hero-text h1{margin-bottom:16px}
+.page-hero-text h1{margin-bottom:16px;line-height:1.3}
+.h1-sub{display:block;font-size:0.5em;font-weight:400;color:var(--text-muted);margin-top:8px}
 .page-hero-text p{color:var(--text-light);font-size:1.05rem;line-height:1.7}
 .page-hero-image{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);max-height:380px}
 .page-hero-image img{width:100%;height:100%;object-fit:cover}
@@ -647,16 +648,16 @@ section{padding:60px 0}
 <div class="header-logo" onclick="showPage('home')" role="link" aria-label="Retour à l'accueil" tabindex="0">
 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgdmlld0JveD0iMCAwIDY4MCAyMDAiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHRpdGxlIHN0eWxlPSJmaWxsOnJnYigwLCAwLCAwKTtzdHJva2U6bm9uZTtjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtvcGFjaXR5OjE7Zm9udC1mYW1pbHk6JnF1b3Q7QW50aHJvcGljIFNhbnMmcXVvdDssIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJnF1b3Q7U2Vnb2UgVUkmcXVvdDssIHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7Zm9udC13ZWlnaHQ6NDAwO3RleHQtYW5jaG9yOnN0YXJ0O2RvbWluYW50LWJhc2VsaW5lOmF1dG8iPkxvZ28gQXRlbGllciBCb2lzIEJydXQ8L3RpdGxlPgo8ZGVzYyBzdHlsZT0iZmlsbDpyZ2IoMCwgMCwgMCk7c3Ryb2tlOm5vbmU7Y29sb3I6cmdiKDI1NSwgMjU1LCAyNTUpO3N0cm9rZS13aWR0aDoxcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7b3BhY2l0eToxO2ZvbnQtZmFtaWx5OiZxdW90O0FudGhyb3BpYyBTYW5zJnF1b3Q7LCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICZxdW90O1NlZ29lIFVJJnF1b3Q7LCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjQwMDt0ZXh0LWFuY2hvcjpzdGFydDtkb21pbmFudC1iYXNlbGluZTphdXRvIj5Mb2dvIGhvcml6b250YWwgcG91ciBzaXRlIHdlYjwvZGVzYz4KCgoKPGRlZnM+CiAgPHBhdHRlcm4gaWQ9IndnIiB4PSIwIiB5PSIwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgIDxsaW5lIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSI2IiBzdHJva2U9IiM4QjY5MTQiIHN0cm9rZS13aWR0aD0iMC4zIiBvcGFjaXR5PSIwLjMiLz4KICA8L3BhdHRlcm4+CjwvZGVmcz4KCjwhLS0gVHJlZSBtYXJrIG9uIHRoZSBsZWZ0IC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzAsIDEwMCkiIHN0eWxlPSJmaWxsOnJnYigwLCAwLCAwKTtzdHJva2U6bm9uZTtjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtvcGFjaXR5OjE7Zm9udC1mYW1pbHk6JnF1b3Q7QW50aHJvcGljIFNhbnMmcXVvdDssIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJnF1b3Q7U2Vnb2UgVUkmcXVvdDssIHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7Zm9udC13ZWlnaHQ6NDAwO3RleHQtYW5jaG9yOnN0YXJ0O2RvbWluYW50LWJhc2VsaW5lOmF1dG8iPgogIDwhLS0gVHJ1bmsgLS0+CiAgPHJlY3QgeD0iLTciIHk9IjEwIiB3aWR0aD0iMTQiIGhlaWdodD0iNDIiIHJ4PSIyIiBmaWxsPSIjNkI0RTBBIiBzdHlsZT0iZmlsbDpyZ2IoMTA3LCA3OCwgMTApO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxyZWN0IHg9Ii03IiB5PSIxMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjQyIiByeD0iMiIgZmlsbD0idXJsKCN3ZykiIHN0eWxlPSJzdHJva2U6bm9uZTtjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtvcGFjaXR5OjE7Zm9udC1mYW1pbHk6JnF1b3Q7QW50aHJvcGljIFNhbnMmcXVvdDssIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJnF1b3Q7U2Vnb2UgVUkmcXVvdDssIHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7Zm9udC13ZWlnaHQ6NDAwO3RleHQtYW5jaG9yOnN0YXJ0O2RvbWluYW50LWJhc2VsaW5lOmF1dG8iLz4KICA8IS0tIFJvb3RzIC0tPgogIDxwYXRoIGQ9Ik0tNyA1MCBRLTE4IDU2IC0yNSA1MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkI0RTBBIiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTpyZ2IoMTA3LCA3OCwgMTApO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6Mi4ycHg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxwYXRoIGQ9Ik03IDUwIFExOCA1NiAyNSA1MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkI0RTBBIiBzdHJva2Utd2lkdGg9IjIuMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTpyZ2IoMTA3LCA3OCwgMTApO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6Mi4ycHg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgoKICA8IS0tIENyb3duIC0tPgogIDxlbGxpcHNlIGN4PSIwIiBjeT0iLTE1IiByeD0iNDIiIHJ5PSIzNiIgZmlsbD0iIzNENUEzQSIgc3R5bGU9ImZpbGw6cmdiKDYxLCA5MCwgNTgpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxlbGxpcHNlIGN4PSItMTgiIGN5PSItMjQiIHJ4PSIyNiIgcnk9IjI0IiBmaWxsPSIjNEE2QjQ3IiBzdHlsZT0iZmlsbDpyZ2IoNzQsIDEwNywgNzEpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxlbGxpcHNlIGN4PSIyMCIgY3k9Ii0yMCIgcng9IjI0IiByeT0iMjIiIGZpbGw9IiM0QTZCNDciIHN0eWxlPSJmaWxsOnJnYig3NCwgMTA3LCA3MSk7c3Ryb2tlOm5vbmU7Y29sb3I6cmdiKDI1NSwgMjU1LCAyNTUpO3N0cm9rZS13aWR0aDoxcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7b3BhY2l0eToxO2ZvbnQtZmFtaWx5OiZxdW90O0FudGhyb3BpYyBTYW5zJnF1b3Q7LCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICZxdW90O1NlZ29lIFVJJnF1b3Q7LCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjQwMDt0ZXh0LWFuY2hvcjpzdGFydDtkb21pbmFudC1iYXNlbGluZTphdXRvIi8+CiAgPGVsbGlwc2UgY3g9IjAiIGN5PSItMzYiIHJ4PSIyMCIgcnk9IjE4IiBmaWxsPSIjNTY3RDUyIiBzdHlsZT0iZmlsbDpyZ2IoODYsIDEyNSwgODIpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxlbGxpcHNlIGN4PSItMTIiIGN5PSItOCIgcng9IjE2IiByeT0iMTIiIGZpbGw9IiMzRDVBM0EiIG9wYWNpdHk9IjAuNyIgc3R5bGU9ImZpbGw6cmdiKDYxLCA5MCwgNTgpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MC43O2ZvbnQtZmFtaWx5OiZxdW90O0FudGhyb3BpYyBTYW5zJnF1b3Q7LCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICZxdW90O1NlZ29lIFVJJnF1b3Q7LCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjQwMDt0ZXh0LWFuY2hvcjpzdGFydDtkb21pbmFudC1iYXNlbGluZTphdXRvIi8+CiAgPGVsbGlwc2UgY3g9IjE0IiBjeT0iLTQiIHJ4PSIxNCIgcnk9IjEwIiBmaWxsPSIjM0Q1QTNBIiBvcGFjaXR5PSIwLjYiIHN0eWxlPSJmaWxsOnJnYig2MSwgOTAsIDU4KTtzdHJva2U6bm9uZTtjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtvcGFjaXR5OjAuNjtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgoKICA8IS0tIExlYWYgdmVpbnMgLS0+CiAgPHBhdGggZD0iTS05IC0zMCBRLTQgLTI2IDAgLTMwIFE0IC0zNCA5IC0zMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNkI4RjY2IiBzdHJva2Utd2lkdGg9IjAuNiIgb3BhY2l0eT0iMC41IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTpyZ2IoMTA3LCAxNDMsIDEwMik7Y29sb3I6cmdiKDI1NSwgMjU1LCAyNTUpO3N0cm9rZS13aWR0aDowLjZweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtvcGFjaXR5OjAuNTtmb250LWZhbWlseTomcXVvdDtBbnRocm9waWMgU2FucyZxdW90OywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAmcXVvdDtTZWdvZSBVSSZxdW90Oywgc2Fucy1zZXJpZjtmb250LXNpemU6MTZweDtmb250LXdlaWdodDo0MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byIvPgogIDxwYXRoIGQ9Ik0tMTYgLTE2IFEtOSAtMTMgLTIgLTE2IiBmaWxsPSJub25lIiBzdHJva2U9IiM2QjhGNjYiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIwLjQiIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOnJnYigxMDcsIDE0MywgMTAyKTtjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlLXdpZHRoOjAuNXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MC40O2ZvbnQtZmFtaWx5OiZxdW90O0FudGhyb3BpYyBTYW5zJnF1b3Q7LCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICZxdW90O1NlZ29lIFVJJnF1b3Q7LCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjQwMDt0ZXh0LWFuY2hvcjpzdGFydDtkb21pbmFudC1iYXNlbGluZTphdXRvIi8+CjwvZz4KCjwhLS0gVmVydGljYWwgc2VwYXJhdG9yIHdpdGggdGVub24tbW9ydGFpc2UgbWFyayAtLT4KPGxpbmUgeDE9IjIwMCIgeTE9IjYwIiB4Mj0iMjAwIiB5Mj0iMTQwIiBzdHJva2U9IiNBMDg0NUEiIHN0cm9rZS13aWR0aD0iMC44IiBzdHlsZT0iZmlsbDpyZ2IoMCwgMCwgMCk7c3Ryb2tlOnJnYigxNjAsIDEzMiwgOTApO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MC44cHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7b3BhY2l0eToxO2ZvbnQtZmFtaWx5OiZxdW90O0FudGhyb3BpYyBTYW5zJnF1b3Q7LCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICZxdW90O1NlZ29lIFVJJnF1b3Q7LCBzYW5zLXNlcmlmO2ZvbnQtc2l6ZToxNnB4O2ZvbnQtd2VpZ2h0OjQwMDt0ZXh0LWFuY2hvcjpzdGFydDtkb21pbmFudC1iYXNlbGluZTphdXRvIi8+CjxyZWN0IHg9IjE5NyIgeT0iOTYiIHdpZHRoPSI2IiBoZWlnaHQ9IjgiIGZpbGw9IiM4QjY5MTQiIG9wYWNpdHk9IjAuNyIgc3R5bGU9ImZpbGw6cmdiKDEzOSwgMTA1LCAyMCk7c3Ryb2tlOm5vbmU7Y29sb3I6cmdiKDI1NSwgMjU1LCAyNTUpO3N0cm9rZS13aWR0aDoxcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7b3BhY2l0eTowLjc7Zm9udC1mYW1pbHk6JnF1b3Q7QW50aHJvcGljIFNhbnMmcXVvdDssIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJnF1b3Q7U2Vnb2UgVUkmcXVvdDssIHNhbnMtc2VyaWY7Zm9udC1zaXplOjE2cHg7Zm9udC13ZWlnaHQ6NDAwO3RleHQtYW5jaG9yOnN0YXJ0O2RvbWluYW50LWJhc2VsaW5lOmF1dG8iLz4KCjwhLS0gV29yZG1hcmsgLS0+Cjx0ZXh0IHg9IjIyNSIgeT0iOTUiIGZvbnQtZmFtaWx5PSInUGxheWZhaXIgRGlzcGxheScsIEdlb3JnaWEsIHNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjM4IiBmaWxsPSIjM0IyRjFBIiBsZXR0ZXItc3BhY2luZz0iMyIgc3R5bGU9ImZpbGw6cmdiKDU5LCA0NywgMjYpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtQbGF5ZmFpciBEaXNwbGF5JnF1b3Q7LCBHZW9yZ2lhLCBzZXJpZjtmb250LXNpemU6MzhweDtmb250LXdlaWdodDo3MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byI+QVRFTElFUjwvdGV4dD4KPHRleHQgeD0iMjI1IiB5PSIxMzgiIGZvbnQtZmFtaWx5PSInUGxheWZhaXIgRGlzcGxheScsIEdlb3JnaWEsIHNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjM4IiBmaWxsPSIjM0IyRjFBIiBsZXR0ZXItc3BhY2luZz0iMyIgc3R5bGU9ImZpbGw6cmdiKDU5LCA0NywgMjYpO3N0cm9rZTpub25lO2NvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO29wYWNpdHk6MTtmb250LWZhbWlseTomcXVvdDtQbGF5ZmFpciBEaXNwbGF5JnF1b3Q7LCBHZW9yZ2lhLCBzZXJpZjtmb250LXNpemU6MzhweDtmb250LXdlaWdodDo3MDA7dGV4dC1hbmNob3I6c3RhcnQ7ZG9taW5hbnQtYmFzZWxpbmU6YXV0byI+Qk9JUyBCUlVUPC90ZXh0PgoKPC9zdmc+" alt="Atelier Bois Brut - Ébéniste dans le Perche" width="48" height="48" loading="eager">
 <div>
-<div class="header-logo-text">Atelier Bois Brut</div>
-<div class="header-logo-sub">Depuis 1978</div>
+<div class="header-logo-text" style="display:none">Atelier Bois Brut</div>
+<div class="header-logo-sub" style="display:none">Depuis 1978</div>
 </div>
 </div>
 <nav class="header-nav" aria-label="Navigation principale">
-<span class="nav-link active" onclick="showPage('home')" role="link" aria-label="Accueil" tabindex="0">Accueil</span>
-<span class="nav-link" onclick="showPage('atelier')" role="link" aria-label="Découvrir l'atelier" tabindex="0">L'atelier</span>
-<span class="nav-link" onclick="showPage('creations')" role="link" aria-label="Voir nos créations" tabindex="0">Créations</span>
-<span class="nav-link" onclick="showPage('sur-mesure')" role="link" aria-label="Processus sur-mesure" tabindex="0">Sur-mesure</span>
-<span class="nav-link" onclick="showPage('contact')" role="link" aria-label="Nous contacter" tabindex="0">Contact</span>
+<span class="nav-link active" data-page="home" onclick="showPage('home')" role="link" aria-label="Accueil" tabindex="0">Accueil</span>
+<span class="nav-link" data-page="atelier" onclick="showPage('atelier')" role="link" aria-label="Découvrir l'atelier" tabindex="0">L'atelier</span>
+<span class="nav-link" data-page="creations" onclick="showPage('creations')" role="link" aria-label="Voir nos créations" tabindex="0">Créations</span>
+<span class="nav-link" data-page="sur-mesure" onclick="showPage('sur-mesure')" role="link" aria-label="Processus sur-mesure" tabindex="0">Sur-mesure</span>
+<span class="nav-link" data-page="contact" onclick="showPage('contact')" role="link" aria-label="Nous contacter" tabindex="0">Contact</span>
 </nav>
 <div class="header-cta">
 <a href="tel:+33233456789" class="btn btn-secondary" aria-label="Appeler l'atelier"><i data-lucide="phone"></i> 02 33 45 67 89</a>
@@ -955,7 +956,7 @@ section{padding:60px 0}
 <div class="page-hero-grid">
 <div class="page-hero-text" data-aos="fade-right">
 <div class="hero-badge"><i data-lucide="clock"></i> Depuis 1978</div>
-<h1>L'Atelier Bois Brut - Trois générations d'ébénistes dans le Perche</h1>
+<h1>L'Atelier Bois Brut<br><span class="h1-sub">Trois générations d'ébénistes dans le Perche</span></h1>
 <p>Tout commence en 1978. Marcel Moreau, ébéniste de formation, installe son atelier au 18 Chemin des Grands Chênes à Mortagne-au-Perche. Fils et petit-fils de charpentiers normands, il choisit le bois massif et les assemblages à la main comme seule boussole.</p>
 </div>
 <div class="page-hero-image" data-aos="fade-left">
@@ -1066,7 +1067,7 @@ section{padding:60px 0}
 <div class="page-hero-grid">
 <div class="page-hero-text" data-aos="fade-right">
 <div class="hero-badge"><i data-lucide="image"></i> Galerie</div>
-<h1>Nos créations - Mobilier bois massif sur-mesure, escaliers et aménagements</h1>
+<h1>Nos créations<br><span class="h1-sub">Mobilier bois massif sur-mesure, escaliers et aménagements</span></h1>
 <p>Chaque pièce présentée ici a été dessinée avec un client, fabriquée à l'atelier de Mortagne-au-Perche, puis livrée et installée en Normandie ou dans les régions voisines.</p>
 </div>
 <div class="page-hero-image" data-aos="fade-left">
@@ -1156,7 +1157,7 @@ section{padding:60px 0}
 <div class="page-hero-grid">
 <div class="page-hero-text" data-aos="fade-right">
 <div class="hero-badge"><i data-lucide="ruler"></i> Sur-mesure</div>
-<h1>Votre projet sur-mesure - De l'esquisse à la livraison en Normandie</h1>
+<h1>Votre projet sur-mesure<br><span class="h1-sub">De l'esquisse à la livraison en Normandie</span></h1>
 <p>Faire fabriquer un meuble sur-mesure par un ébéniste artisanal, c'est s'offrir une pièce unique, taillée pour votre espace, vos usages et vos goûts.</p>
 </div>
 <div class="page-hero-image" data-aos="fade-left">
@@ -1237,7 +1238,7 @@ section{padding:60px 0}
 <div class="container">
 <div class="page-hero-text" style="max-width:700px" data-aos="fade-up">
 <div class="hero-badge"><i data-lucide="mail"></i> Contact</div>
-<h1>Contactez l'Atelier Bois Brut - Devis gratuit sous 5 jours</h1>
+<h1>Contactez l'Atelier Bois Brut<br><span class="h1-sub">Devis gratuit sous 5 jours</span></h1>
 <p>Vous avez un projet de table bois massif, d'escalier chêne, de restauration ou d'aménagement intérieur ? Décrivez-nous votre idée. Nous vous répondons sous 5 jours ouvrés avec un premier retour.</p>
 </div>
 </div>
@@ -1462,13 +1463,15 @@ if(desc)desc.setAttribute('content',data.description);
 var canon=document.querySelector('link[rel="canonical"]');
 if(canon)canon.setAttribute('href','https://atelier-bois-brut.fr'+(data.slug==='/'?'/':data.slug));
 var url=slug==='home'?'/':'/'+slug;
-window.history.pushState({},'',url);
+if(window.location.protocol!=='file:')window.history.pushState({page:slug},'',url);
 }
 
 function updateNav(slug){
-document.querySelectorAll('.header-nav .nav-link').forEach(function(el){
+document.querySelectorAll('.header-nav .nav-link, #mobile-menu .mobile-link').forEach(function(el){
 el.classList.remove('active');
-if(el.getAttribute('onclick')&&el.getAttribute('onclick').indexOf("'"+slug+"'")!==-1)el.classList.add('active');
+var p=el.getAttribute('data-page');
+if(!p){var m=el.getAttribute('onclick');if(m){var r=m.match(/showPage\('([^']+)'\)/);if(r)p=r[1];}}
+if(p===slug)el.classList.add('active');
 });
 }
 
