@@ -1,0 +1,16 @@
+{
+  "name": "La Table de Margaux",
+  "short_name": "La Table de ",
+  "description": "La Table de Margaux, restaurant gastronomique a Bordeaux. Cuisine de saison du Sud-Ouest par la cheffe étoilée Margaux Delacroix. Menus dégustation et formule déjeuner.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a2e",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
