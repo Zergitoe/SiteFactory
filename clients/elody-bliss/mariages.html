@@ -459,7 +459,7 @@ html body .footer-social-item:hover .footer-social,html body .footer-social:hove
 .cta-band p{color:#F4ECE9}
 html body .cookie-btn-accept{background:var(--rose);color:var(--text-primary)}
 html body .toggle-switch.on{background:var(--rose-hover)}
-</style><style>.album-video{display:block;width:100%;max-width:960px;height:auto;aspect-ratio:16/9;margin:0 auto 20px;border-radius:10px;background:#000}.galerie-video{width:100%;height:auto;aspect-ratio:1280/2276;border-radius:8px;background:#000;display:block}</style></head>
+</style><style>.album-video{display:block;width:100%;max-width:960px;height:auto;aspect-ratio:16/9;margin:0 auto 20px;border-radius:10px;background:#000}.ny-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:40px 0 0}.ny-gallery img,.ny-gallery video{display:block;width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px;background:#0e0c0b;cursor:pointer}@media(max-width:1000px){.ny-gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.ny-gallery{grid-template-columns:1fr}}</style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -711,14 +711,14 @@ html body .toggle-switch.on{background:var(--rose-hover)}
 <p class="ny-quote-sub" data-i18n="cf_ny_q">Je veux me réveiller dans une ville qui ne dort jamais. Frank Sinatra</p>
 </div>
 
-<div class="page-gallery" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:40px 0 0;max-width:none">
-<img src="images/galerie-cf-1.webp" alt="Coiffure et maquillage de mariee a Brooklyn, New York, par Elody Bliss" width="750" height="1065" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px" onclick="openLightbox(this)">
-<img src="images/galerie-cf-2.webp" alt="Demande en mariage new-yorkaise, mise en beaute par Elody Bliss" width="750" height="1063" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px" onclick="openLightbox(this)">
-<img src="images/galerie-cf-3.webp" alt="Mariage a New York, coiffure naturelle et boheme par Elody Bliss" width="750" height="1057" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px" onclick="openLightbox(this)">
-<img src="images/ny-4.webp" alt="Seance photo des maries devant le Manhattan Bridge, Brooklyn" width="900" height="1200" loading="lazy" decoding="async" onclick="openLightbox(this)">
-<img src="images/ny-5.webp" alt="Couple enlace devant un mur de briques new-yorkais, mise en beaute Elody Bliss" width="900" height="600" loading="lazy" decoding="async" onclick="openLightbox(this)">
-<img src="images/ny-6.webp" alt="Les maries dans les rues de Brooklyn, coiffure et maquillage Elody Bliss" width="900" height="600" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<div class="ny-gallery galerie-clic">
+<img src="images/galerie-cf-1.webp" alt="Coiffure et maquillage de mariee a Brooklyn, New York, par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/galerie-cf-2.webp" alt="Demande en mariage new-yorkaise, mise en beaute par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/galerie-cf-3.webp" alt="Mariage a New York, coiffure naturelle et boheme par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
 <video class="galerie-video" controls playsinline preload="none" poster="videos/newyork-poster.webp" width="1280" height="2276" aria-label="Video du shooting de mariage a New York, mise en beaute par Elody Bliss"><source src="videos/newyork.mp4" type="video/mp4"></video>
+<img src="images/ny-4.webp" alt="Seance photo des maries devant le Manhattan Bridge, Brooklyn" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/ny-5.webp" alt="Couple enlace devant un mur de briques new-yorkais, mise en beaute Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/ny-6.webp" alt="Les maries dans les rues de Brooklyn, coiffure et maquillage Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
 </div>
 
 <div style="text-align:center;margin-top:40px">
