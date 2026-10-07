@@ -595,11 +595,50 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <h2 class="shoot-titre" data-i18n="ap_shoot2_h">Just like Stevie Nicks for a while</h2>
 <p class="shoot-paroles" data-i18n="ap_shoot2_l">« Comme l'amour qui m'avait enfin, enfin trouvé<br><span class="vo">Like the Love That Had Finally, Finally Found Me</span><br>Alors j'ai su<br><span class="vo">Then I Knew</span><br>Dans la connaissance cristalline de toi<br><span class="vo">In the Crystalline Knowledge of You</span><br>Tu m'as conduit à travers les montagnes<br><span class="vo">Drove Me Thru the Mountains</span><br>À travers la fontaine d'eau claire comme du cristal<br><span class="vo">Thru the Crystal-like Clear Water Fountain</span><br>Tu m'as attiré comme un aimant<br><span class="vo">Drove Me Like a Magnet</span><br>Vers la mer<br><span class="vo">To the Sea</span> »</p>
 <p class="shoot-texte" data-i18n="ap_shoot2_p">Les chansons, les textes, la mélodie, les vibes de la chanteuse me portent depuis des années. Je l'écoute en prenant la route pour rejoindre mes mariées, Stevie est en quelque sorte une légende pour moi. J'ai eu la chance d'assister à l'un de ses concerts lors de sa tournée, à Phoenix en Arizona !! C'était super, mais la nostalgie des mini concerts d'avant sera toujours là… C'est là que je me dis que je ne suis pas née à la bonne époque, mais en même temps si !! Merci à toi Lindy pour ton talent et pour me rejoindre dans mes folies !! Tu ajoutes de la création à mes idées, j'adore !! Merci encore et toujours.</p>
-<div class="about-gallery" data-aos="fade-up" style="margin-top:12px">
-<img src="images/img-stevie-1.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" width="800" height="1200" loading="lazy" decoding="async" onclick="openLightbox(this)">
-<img src="images/img-stevie-2.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" width="800" height="1200" loading="lazy" decoding="async" onclick="openLightbox(this)">
-<img src="images/img-stevie-3.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" width="800" height="1200" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<style>
+.stevie-split{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;margin-top:12px}
+.stevie-slider{position:relative;aspect-ratio:3/4;border-radius:10px;overflow:hidden;background:#1b1210}
+.stevie-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease;cursor:pointer}
+.stevie-slider img.actif{opacity:1}
+.stevie-slider .slider-btn{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:none;background:rgba(255,255,255,0.86);color:var(--text-primary);font-size:1.3rem;line-height:1;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center}
+.stevie-slider .slider-prev{left:10px}.stevie-slider .slider-next{right:10px}
+.stevie-slider .slider-puces{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2}
+.stevie-slider .slider-puces span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.5)}
+.stevie-slider .slider-puces span.on{background:#fff}
+.stevie-droite{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stevie-droite img{display:block;width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;cursor:pointer}
+.stevie-droite img:first-child{grid-column:1 / -1;aspect-ratio:3/2}
+@media(max-width:820px){.stevie-split{grid-template-columns:1fr}}
+</style>
+<div class="stevie-split">
+<div class="stevie-slider galerie-clic">
+<img src="images/stevie-slide-1.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" class="actif" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-2.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-3.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-4.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-5.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-6.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-7.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-8.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-9.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/stevie-slide-10.webp" alt="Shooting inspiration Stevie Nicks par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<button class="slider-btn slider-prev" aria-label="Photo precedente">‹</button>
+<button class="slider-btn slider-next" aria-label="Photo suivante">›</button>
+<div class="slider-puces" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
+<div class="stevie-droite galerie-clic">
+<img src="images/img-stevie-1.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/img-stevie-2.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" loading="lazy" decoding="async" onclick="openLightbox(this)">
+<img src="images/img-stevie-3.webp" alt="Elody Bliss shooting inspiration Stevie Nicks" loading="lazy" decoding="async" onclick="openLightbox(this)">
+</div>
+</div>
+<script>/*stevie-slider*/document.addEventListener('DOMContentLoaded',function(){var s=document.querySelector('.stevie-slider');if(!s)return;var im=s.querySelectorAll('img'),pu=s.querySelectorAll('.slider-puces span'),i=0,t=null;
+function montre(k){im[i].classList.remove('actif');if(pu[i])pu[i].classList.remove('on');i=(k+im.length)%im.length;im[i].classList.add('actif');if(pu[i])pu[i].classList.add('on');}
+function lance(){t=setInterval(function(){montre(i+1);},4000);}function arrete(){clearInterval(t);t=null;}
+s.querySelector('.slider-next').addEventListener('click',function(){arrete();montre(i+1);lance();});
+s.querySelector('.slider-prev').addEventListener('click',function(){arrete();montre(i-1);lance();});
+s.addEventListener('mouseenter',arrete);s.addEventListener('mouseleave',function(){if(!t)lance();});lance();});</script>
+
 <p class="about-caption" data-i18n="ap_cap_stevie">Shooting inspiration Stevie Nicks<br>Photos by @lindylinphoto</p>
 <h2 class="shoot-titre" data-i18n="ap_shoot3_h">« If you're going to San Francisco, be sure to wear some flowers in your hair »</h2>
 <p class="shoot-texte" data-i18n="ap_shoot3_p">Qu'il est agréable de rencontrer des personnes qui nous ressemblent et qui croient en nous !! C'est le cas de ma pétillante Randie !! Une rencontre inattendue et spontanée ! J'ai beaucoup aimé le style de ses photos, ce qui m'a permis de lui faire part de mon projet et d'organiser le shooting à Palm Springs. Le côté désert mystique de la ville m'a attirée et inspirée pour réaliser notre projet. Randie est tellement fun et créative !! Elle n'hésite pas à s'allonger totalement par terre, à même le goudron brûlant des rues de la ville, pour réaliser sa photo !! Juste géniale !! Je n'oublierai jamais non plus la route ensemble depuis Los Angeles jusqu'à Palm Springs, où nous avons échangé sur nos vies respectives.</p>
