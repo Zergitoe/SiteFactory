@@ -468,15 +468,16 @@ html body .toggle-switch.on{background:var(--rose-hover)}
 .hero-slides{position:absolute;inset:0}
 .hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
 .hero-slides img.actif{opacity:1}
-.hero-accroche{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;max-width:1180px;margin:0 auto;padding:18px clamp(16px,4vw,48px) 8px}
+.hero-slideshow::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(255,255,255,0) 42%,rgba(255,255,255,0.22) 62%,rgba(255,255,255,0.72) 100%)}
+.hero-accroche{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px) clamp(10px,2vh,28px)}
 .hero-accroche p{margin:0}
-.hero-accroche .hero-enchante{font-family:'Anton',var(--font-display),serif;font-weight:400;text-transform:uppercase;font-size:clamp(3rem,11vw,9rem);line-height:0.9;letter-spacing:0.01em;color:#0D0B0B}
-.hero-accroche .hero-bienvenue{font-family:var(--font-script);font-size:clamp(3rem,11vw,8.6rem);line-height:1;margin:-0.22em 0 0}
-.hero-accroche .hero-univers{font-family:var(--font-script);font-size:clamp(1.4rem,4.6vw,3.8rem);line-height:1;color:#0D0B0B;margin:-0.38em 0 0}
-.hero-accroche .hero-beaute{font-family:var(--font-script);font-size:clamp(3rem,11vw,8.6rem);line-height:1.5;margin:0.22em 0 0}
-.mot-blanc{color:var(--rose-hover)}
+.hero-accroche .hero-enchante{font-family:'Anton',var(--font-display),serif;font-weight:400;text-transform:uppercase;font-size:clamp(2.6rem,9.4vw,7.6rem);line-height:0.9;letter-spacing:0.01em;color:#15100e;text-shadow:0 2px 24px rgba(255,255,255,0.8),0 1px 3px rgba(255,255,255,0.95)}
+.hero-accroche .hero-bienvenue{font-family:var(--font-script);font-size:clamp(2.6rem,9.4vw,7.4rem);line-height:1;margin:-0.2em 0 0}
+.hero-accroche .hero-univers{font-family:var(--font-script);font-size:clamp(1.3rem,4vw,3.2rem);line-height:1;color:#15100e;margin:-0.34em 0 0;text-shadow:0 2px 16px rgba(255,255,255,0.85),0 1px 2px rgba(255,255,255,0.95)}
+.hero-accroche .hero-beaute{font-family:var(--font-script);font-size:clamp(2.6rem,9.4vw,7.4rem);line-height:1.5;margin:0.1em 0 0}
+.mot-blanc{color:#fff;text-shadow:0 2px 10px rgba(30,20,16,0.55),0 6px 36px rgba(30,20,16,0.45)}
 .grande-lettre{font-size:1.35em;line-height:0}
-@media(max-width:700px){.hero-slideshow{margin-top:70px;height:clamp(420px,62vh,620px)}.hero-accroche{padding:14px 10px 4px}.hero-accroche .hero-enchante{font-size:16vw}.hero-accroche .hero-bienvenue{font-size:16.5vw}.hero-accroche .hero-univers{font-size:6.6vw}.hero-accroche .hero-beaute{font-size:16.5vw}}
+@media(max-width:700px){.hero-slideshow{margin-top:70px;height:clamp(440px,70vh,660px)}.hero-accroche{padding:0 10px 10px}.hero-accroche .hero-enchante{font-size:15vw}.hero-accroche .hero-bienvenue{font-size:15.5vw}.hero-accroche .hero-univers{font-size:6.2vw}.hero-accroche .hero-beaute{font-size:15.5vw}}
 </style><style>/*police-machine*/
 html body{font-family:'Courier Prime',ui-monospace,'Courier New',monospace;letter-spacing:-0.01em}
 html body p,html body li,html body dd,html body dt,html body figcaption,html body label,html body input,html body textarea,html body select,html body .album-meta,html body .about-caption,html body .avis-titre,html body .hero-trust,html body .faq-answer{font-family:'Courier Prime',ui-monospace,'Courier New',monospace}
@@ -558,13 +559,13 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <img src="images/hero-7.webp" alt="Baiser des maries a contre-jour" loading="lazy" decoding="async" style="object-position:center 38%">
 <img src="images/hero-8.webp" alt="Les maries main dans la main dans les champs" loading="lazy" decoding="async" style="object-position:center 30%">
 </div>
-</section>
-<div class="hero-accroche hero-sous-titre">
+<div class="hero-accroche">
 <p class="hero-enchante" data-i18n="hero_enchante">Welcome</p>
 <p class="hero-bienvenue"><span class="mot-blanc" data-i18n="hero_bienvenue">Lovely</span></p>
 <p class="hero-univers" data-i18n="hero_univers">to meet you, step into my world of</p>
 <p class="hero-beaute"><span class="mot-blanc"><span class="grande-lettre">B</span><span data-i18n="hero_beaute">eauty !!</span></span></p>
 </div>
+</section>
 
 <section class="hero-section">
 <div class="container">
