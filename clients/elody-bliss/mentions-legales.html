@@ -473,6 +473,14 @@ html body .hero-accroche .hero-enchante{font-family:'Anton',var(--font-display),
 html body .about-quote{font-family:var(--font-display),serif}
 html body .ny-quote{font-family:var(--font-display),serif}
 html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
+</style><style>/*noir-textes*/
+:root{--text-primary:#121010;--text-secondary:#2E2B29;--text-muted:#56514D}
+footer{background:#3A332E}
+html body h1,html body h2,html body .titre-xl,html body .lieux-titre{color:#0D0B0B}
+html body h3,html body h4,html body .shoot-titre,html body .avis-titre,html body .album-section h3{color:#1E1B1A}
+html body p,html body li,html body .album-meta,html body .about-caption{color:#36322F}
+html body .cta-band h2{color:#fff}
+html body .cta-band p,html body footer p,html body footer li,html body footer a{color:inherit}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -480,10 +488,10 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <header id="mainHeader">
 <div class="header-inner">
 <div class="header-logo" onclick="location.href='/'" role="link" aria-label="Retour a l accueil Elody Bliss">
-<span class="header-logo-text" data-i18n="logo_site"><img src="images/logo-fr-header.webp" alt="Elody Bliss, hair stylist et make-up artist" width="900" height="515"></span>
+<span class="header-logo-text" data-i18n="logo_site"><img src="images/logo-en-header.webp" alt="Elody Bliss, hairstylist and make-up artist" width="900" height="555"></span>
 </div>
 <nav aria-label="Navigation principale">
-<a href="/" class="nav-link" data-page="home"  data-i18n="nav_home">Accueil</a>
+<a href="/" class="nav-link" data-page="home"  data-i18n="nav_home">Home</a>
 <div class="services-dropdown-wrap">
 <span class="nav-link" data-page="services-parent">Services <i data-lucide="chevron-down" style="width:14px;height:14px;vertical-align:middle"></i></span>
 <div class="dropdown-menu">
@@ -493,17 +501,13 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <a href="/massage-hair-spa" aria-label="Hair Spa et Massage">Hair Spa &amp; Massage</a>
 </div>
 </div>
-<a href="/mariages" class="nav-link" data-page="mariages"  data-i18n="nav_weddings">Mariages</a>
+<a href="/mariages" class="nav-link" data-page="mariages"  data-i18n="nav_weddings">Weddings</a>
 <a href="/a-propos" class="nav-link" data-page="a-propos" >About me</a>
 <a href="/faq" class="nav-link" data-page="faq" data-i18n="nav_faq">FAQ</a>
 <a href="/contact" class="nav-link" data-page="contact" >Contact</a>
 </nav>
-<div class="header-cta"><a href="tel:+33658824863" class="btn-primary" aria-label="Appeler Elody Bliss"><i data-lucide="phone" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_book">Prendre rendez-vous</span></a>
-<a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" aria-label="Reserver en ligne sur Planity"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_online">Réserver en ligne</span></a>
-</div>
-<div class="lang-switch">
-<button class="lang-btn" data-lang="fr" aria-label="Francais" title="Francais"><svg viewBox="0 0 3 2" width="24" height="16"><rect width="1" height="2" fill="#0055A4"/><rect width="1" height="2" x="1" fill="#fff"/><rect width="1" height="2" x="2" fill="#EF4135"/></svg></button>
-<button class="lang-btn" data-lang="en" aria-label="English" title="English"><svg viewBox="0 0 19 10" width="24" height="16"><rect width="19" height="10" fill="#B22234"/><g fill="#fff"><rect y="0.77" width="19" height="0.77"/><rect y="2.3" width="19" height="0.77"/><rect y="3.85" width="19" height="0.77"/><rect y="5.38" width="19" height="0.77"/><rect y="6.92" width="19" height="0.77"/><rect y="8.46" width="19" height="0.77"/></g><rect width="7.6" height="5.38" fill="#3C3B6E"/></svg></button>
+<div class="header-cta"><a href="tel:+33658824863" class="btn-primary" aria-label="Appeler Elody Bliss"><i data-lucide="phone" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_book">Book an appointment</span></a>
+<a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" aria-label="Reserver en ligne sur Planity"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_online">Book online</span></a>
 </div>
 <div class="hamburger" id="hamburger" onclick="toggleMobile()" role="button" tabindex="0" aria-label="Menu mobile">
 <span></span><span></span><span></span>
@@ -511,7 +515,7 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
-<span class="nav-link" data-page="home" onclick="location.href='/'" data-i18n="nav_home_m">Accueil</span>
+<span class="nav-link" data-page="home" onclick="location.href='/'" data-i18n="nav_home_m">Home</span>
 <span class="nav-link" data-page="services-parent" onclick="toggleMobileSub()">Services <i data-lucide="chevron-down" style="width:14px;height:14px"></i></span>
 <div class="mobile-sub" id="mobileSub" style="display:none">
 <a href="/coiffure-mariee" onclick="location.href='/coiffure-mariee'">Hairstyle Artist</a>
@@ -519,30 +523,30 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <a href="/coloration" onclick="location.href='/coloration'">Hair color</a>
 <a href="/massage-hair-spa" onclick="location.href='/massage-hair-spa'">Hair Spa &amp; Massage</a>
 </div>
-<span class="nav-link" data-page="mariages" onclick="location.href='/mariages'" data-i18n="nav_weddings_m">Mariages</span>
+<span class="nav-link" data-page="mariages" onclick="location.href='/mariages'" data-i18n="nav_weddings_m">Weddings</span>
 <span class="nav-link" data-page="a-propos" onclick="location.href='/a-propos'">About me</span>
 <span class="nav-link" data-page="faq" onclick="location.href='/faq'" data-i18n="nav_faq_m">FAQ</span>
 <span class="nav-link" data-page="contact" onclick="location.href='/contact'">Contact</span>
-<a href="tel:+33658824863" class="btn-primary" style="margin-top:24px;text-align:center;justify-content:center" data-i18n="cta_book_m"><i data-lucide="phone" style="width:16px;height:16px"></i> Prendre rendez-vous</a>
-<a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" style="margin-top:12px;text-align:center;justify-content:center" aria-label="Reserver en ligne sur Planity" data-i18n="cta_online_m"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> Réserver en ligne</a>
+<a href="tel:+33658824863" class="btn-primary" style="margin-top:24px;text-align:center;justify-content:center" data-i18n="cta_book_m"><i data-lucide="phone" style="width:16px;height:16px"></i> Book an appointment</a>
+<a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" style="margin-top:12px;text-align:center;justify-content:center" aria-label="Reserver en ligne sur Planity" data-i18n="cta_online_m"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> Book online</a>
 </div>
 
 <main id="main">
 <div class="page active" id="page-mentions-legales">
 <section class="page-hero" style="background:var(--bg-secondary)">
-<div class="container"><div style="max-width:700px" data-aos="fade-up"><span class="sur-titre" data-i18n="ml_kicker">Mentions legales</span><h1 data-i18n="ml_h1">Mentions legales</h1></div></div>
+<div class="container"><div style="max-width:700px" data-aos="fade-up"><span class="sur-titre" data-i18n="ml_kicker">Legal notice</span><h1 data-i18n="ml_h1">Legal notice</h1></div></div>
 </section>
 <section><div class="container"><div class="legal-content">
-<h2 data-i18n="ml_h2a">Éditeur du site</h2>
-<p data-i18n="ml_p1">Le site elodybliss.fr est édité par Elody Bliss.<br>Responsable de la publication : Elody Bliss<br>Adresse : Av. de Saint-Jerome, 13013 Marseille<br>Email : elodybliss@gmail.com<br>Téléphone : 06 58 82 48 63</p>
-<h2 data-i18n="ml_h2b">Hébergement</h2>
-<p data-i18n="ml_p2">Ce site est hébergé par un prestataire d'hébergement web professionnel. Les coordonnees de l'hebergeur peuvent être communiquees sur demande.</p>
-<h2 data-i18n="ml_h2c">Propriété intellectuelle</h2>
-<p data-i18n="ml_p3">L'ensemble des contenus de ce site (textes, images, photographies, logos, icones) est protégé par le droit d'auteur. Toute reproduction, même partielle, est soumise a autorisation préalable.</p>
-<h2 data-i18n="ml_h2d">Données personnelles</h2>
-<p data-i18n="ml_p4">Les informations recueillies via le formulaire de contact sont destinées exclusivement a Elody Bliss pour répondre à vos demandes. Elles ne sont transmises a aucun tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-moi a elodybliss@gmail.com.</p>
+<h2 data-i18n="ml_h2a">Site publisher</h2>
+<p data-i18n="ml_p1">The site elodybliss.fr is published by Elody Bliss.<br>Publication director: Elody Bliss<br>Address: Av. de Saint-Jerome, 13013 Marseille<br>Email: elodybliss@gmail.com<br>Phone: 06 58 82 48 63</p>
+<h2 data-i18n="ml_h2b">Hosting</h2>
+<p data-i18n="ml_p2">This site is hosted by a professional web hosting provider. The host's contact details can be provided on request.</p>
+<h2 data-i18n="ml_h2c">Intellectual property</h2>
+<p data-i18n="ml_p3">All content on this site (text, images, photographs, logos, icons) is protected by copyright. Any reproduction, even partial, requires prior authorization.</p>
+<h2 data-i18n="ml_h2d">Personal data</h2>
+<p data-i18n="ml_p4">The information collected through the contact form is intended exclusively for Elody Bliss to respond to your requests. It is not shared with any third party. In accordance with the GDPR, you have the right to access, rectify and delete your data. To exercise these rights, contact me at elodybliss@gmail.com.</p>
 <h2>Cookies</h2>
-<p data-i18n="ml_p5">Ce site utilise des cookies strictement nécessaires à son fonctionnement. Pour en savoir plus, consultez ma <a href="/politique-confidentialite" class="inline-link" aria-label="Politique de confidentialite">politique de confidentialité</a>.</p>
+<p data-i18n="ml_p5">This site uses cookies that are strictly necessary for it to function. To learn more, see my <a href="/politique-confidentialite" class="inline-link" aria-label="Politique de confidentialite">privacy policy</a>.</p>
 </div></div></section>
 </div>
 </main>
@@ -553,26 +557,26 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <div class="footer-grid">
 <div>
 <h4>Elody Bliss</h4>
-<p style="font-size:0.92rem;color:#D9CDC2;line-height:1.6" data-i18n="ft_tag">Maquilleuse et coiffeuse de mariée à Marseille depuis plus de 20 ans. Mise en beauté naturelle et bohème.</p>
+<p style="font-size:0.92rem;color:#D9CDC2;line-height:1.6" data-i18n="ft_tag">Wedding makeup artist and hairstylist in Marseille for over 20 years. Natural, boho style beauty.</p>
 <p style="margin-top:12px;font-family:var(--font-heading);font-style:italic;color:var(--accent)">Love, Elody</p>
 <div class="footer-socials">
-<a class="footer-social-item" href="https://www.instagram.com/elodybliss/" target="_blank" rel="noopener" aria-label="Instagram @elodybliss, mariages"><span class="footer-social"><i data-lucide="instagram" style="width:20px;height:20px"></i></span><span class="footer-social-label" data-i18n="ft_ig1">Mariages</span></a>
-<a class="footer-social-item" href="https://www.instagram.com/elody_bliss_hair_color/" target="_blank" rel="noopener" aria-label="Instagram @elody_bliss_hair_color, coloration, Hair Spa et massages"><span class="footer-social"><i data-lucide="instagram" style="width:20px;height:20px"></i></span><span class="footer-social-label" data-i18n="ft_ig2">Hair Spa &amp; couleur</span></a>
+<a class="footer-social-item" href="https://www.instagram.com/elodybliss/" target="_blank" rel="noopener" aria-label="Instagram @elodybliss, mariages"><span class="footer-social"><i data-lucide="instagram" style="width:20px;height:20px"></i></span><span class="footer-social-label" data-i18n="ft_ig1">Weddings</span></a>
+<a class="footer-social-item" href="https://www.instagram.com/elody_bliss_hair_color/" target="_blank" rel="noopener" aria-label="Instagram @elody_bliss_hair_color, coloration, Hair Spa et massages"><span class="footer-social"><i data-lucide="instagram" style="width:20px;height:20px"></i></span><span class="footer-social-label" data-i18n="ft_ig2">Hair Spa &amp; colour</span></a>
 <a class="footer-social-item" href="https://www.mariages.net/esthetique-coiffure-mariage/elody-bliss-hair-stylist-&amp;-make-up-artist--e149724" target="_blank" rel="noopener" aria-label="Elody Bliss sur Mariages.net, avis et fiche"><span class="footer-social"><i data-lucide="heart" style="width:20px;height:20px"></i></span><span class="footer-social-label">Mariages.net</span></a>
 <a class="footer-social-item" href="https://wa.me/33658824863" target="_blank" rel="noopener" aria-label="WhatsApp Elody Bliss"><span class="footer-social"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg></span><span class="footer-social-label">WhatsApp</span></a>
 </div>
 </div>
 <div>
-<h4 data-i18n="ft_h_nav">Navigation rapide</h4>
+<h4 data-i18n="ft_h_nav">Quick links</h4>
 <ul>
-<li><a href="/" aria-label="Accueil" style="cursor:pointer" data-i18n="ft_home">Accueil</a></li>
-<li><a href="/maquillage-mariee" aria-label="Maquillage de mariee" style="cursor:pointer" data-i18n="ft_makeup">Maquillage de mariée</a></li>
-<li><a href="/coiffure-mariee" aria-label="Coiffure de mariee" style="cursor:pointer" data-i18n="ft_hair">Coiffure de mariée</a></li>
-<li><a href="/coloration" aria-label="Coloration naturelle" style="cursor:pointer" data-i18n="ft_color">Coloration naturelle</a></li>
-<li><a href="/massage-hair-spa" aria-label="Massage et Hair Spa" style="cursor:pointer" data-i18n="ft_massage">Massage et Hair Spa</a></li>
-<li><a href="/mariages" aria-label="Portfolio mariages" style="cursor:pointer" data-i18n="ft_weddings">Mes mariages</a></li>
+<li><a href="/" aria-label="Accueil" style="cursor:pointer" data-i18n="ft_home">Home</a></li>
+<li><a href="/maquillage-mariee" aria-label="Maquillage de mariee" style="cursor:pointer" data-i18n="ft_makeup">Bridal makeup</a></li>
+<li><a href="/coiffure-mariee" aria-label="Coiffure de mariee" style="cursor:pointer" data-i18n="ft_hair">Bridal hairstyling</a></li>
+<li><a href="/coloration" aria-label="Coloration naturelle" style="cursor:pointer" data-i18n="ft_color">Natural hair color</a></li>
+<li><a href="/massage-hair-spa" aria-label="Massage et Hair Spa" style="cursor:pointer" data-i18n="ft_massage">Massage & Hair Spa</a></li>
+<li><a href="/mariages" aria-label="Portfolio mariages" style="cursor:pointer" data-i18n="ft_weddings">My weddings</a></li>
 <li><a href="/a-propos" aria-label="A propos" style="cursor:pointer">About me</a></li>
-<li><a href="/faq" aria-label="Questions frequentes" style="cursor:pointer" data-i18n="ft_faq">Questions fréquentes</a></li>
+<li><a href="/faq" aria-label="Questions frequentes" style="cursor:pointer" data-i18n="ft_faq">Frequently asked questions</a></li>
 <li><a href="/contact" aria-label="Contact" style="cursor:pointer">Contact</a></li>
 </ul>
 </div>
@@ -582,19 +586,19 @@ html body .testimonial-card blockquote{font-family:var(--font-heading),serif}
 <li><a href="tel:+33658824863"><i data-lucide="phone" style="width:14px;height:14px;vertical-align:middle"></i> 06 58 82 48 63</a></li>
 <li><a href="mailto:elodybliss@gmail.com"><i data-lucide="mail" style="width:14px;height:14px;vertical-align:middle"></i> elodybliss@gmail.com</a></li>
 <li><i data-lucide="map-pin" style="width:14px;height:14px;vertical-align:middle"></i> Av. de Saint-Jerome, 13013 Marseille</li>
-<li data-i18n="ft_appt"><i data-lucide="clock" style="width:14px;height:14px;vertical-align:middle"></i> Sur rendez-vous</li>
+<li data-i18n="ft_appt"><i data-lucide="clock" style="width:14px;height:14px;vertical-align:middle"></i> By appointment</li>
 </ul>
 </div>
 <div>
-<h4 data-i18n="ft_h_info">Informations</h4>
+<h4 data-i18n="ft_h_info">Information</h4>
 <ul>
-<li><a href="/mentions-legales" aria-label="Mentions legales" style="cursor:pointer" data-i18n="ft_legal">Mentions legales</a></li>
-<li><a href="/politique-confidentialite" aria-label="Politique de confidentialite" style="cursor:pointer" data-i18n="ft_privacy">Politique de confidentialité</a></li>
-<li><a onclick="openCookieSettings()" role="button" aria-label="Modifier preferences cookies" style="cursor:pointer" data-i18n="ft_cookies">Modifier mes préférences cookies</a></li>
+<li><a href="/mentions-legales" aria-label="Mentions legales" style="cursor:pointer" data-i18n="ft_legal">Legal notice</a></li>
+<li><a href="/politique-confidentialite" aria-label="Politique de confidentialite" style="cursor:pointer" data-i18n="ft_privacy">Privacy policy</a></li>
+<li><a onclick="openCookieSettings()" role="button" aria-label="Modifier preferences cookies" style="cursor:pointer" data-i18n="ft_cookies">Manage cookie preferences</a></li>
 </ul>
 </div>
 </div>
-<div class="footer-bottom" data-i18n="ft_bottom">&copy; 2025 Elody Bliss. Tous droits reserves. Fait avec &#9825;. Site realise par <a href="https://pierredestribats.fr/" target="_blank" rel="noopener" style="color:var(--accent)">Pierre Destribats</a>.</div>
+<div class="footer-bottom" data-i18n="ft_bottom">&copy; 2025 Elody Bliss. All rights reserved. Made with &#9825;. Made by <a href="https://pierredestribats.fr/" target="_blank" rel="noopener" style="color:var(--accent)">Pierre Destribats</a>.</div>
 </footer>
 
 <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page"><i data-lucide="chevron-up"></i></button>
@@ -875,6 +879,6 @@ window.lucide&&lucide.createIcons();
 
 /* Multi-page navigation */var _sp=showPage;showPage=function(s,i){if(!document.getElementById('page-'+s)){location.href=s==='home'?'/':'/'+s;return;}_sp(s,i);};
 </script>
-<script>(function(){var DICT_EN={"nav_home":"Home","nav_weddings":"Weddings","cta_book":"Book an appointment","cta_online":"Book online","nav_home_m":"Home","nav_weddings_m":"Weddings","cta_online_m":"<i data-lucide=\"calendar-check\" style=\"width:16px;height:16px\"></i> Book online","cta_book_m":"<i data-lucide=\"phone\" style=\"width:16px;height:16px\"></i> Book an appointment","ft_tag":"Wedding makeup artist and hairstylist in Marseille for over 20 years. Natural, bohemian beauty.","ft_ig1":"Weddings","ft_ig2":"Hair Spa &amp; colour","ft_h_nav":"Quick links","ft_home":"Home","ft_makeup":"Bridal makeup","ft_hair":"Bridal hairstyling","ft_color":"Natural hair color","ft_massage":"Massage & Hair Spa","ft_weddings":"My weddings","ft_appt":"<i data-lucide=\"clock\" style=\"width:14px;height:14px;vertical-align:middle\"></i> By appointment","ft_h_info":"Information","ft_legal":"Legal notice","ft_privacy":"Privacy policy","ft_cookies":"Manage cookie preferences","ft_bottom":"&copy; 2025 Elody Bliss. All rights reserved. Made with &#9825;. Made by <a href=\"https://pierredestribats.fr/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--accent)\">Pierre Destribats</a>.","ml_kicker":"Legal notice","ml_h1":"Legal notice","ml_h2a":"Site publisher","ml_p1":"The site elodybliss.fr is published by Elody Bliss.<br>Publication director: Elody Bliss<br>Address: Av. de Saint-Jerome, 13013 Marseille<br>Email: elodybliss@gmail.com<br>Phone: 06 58 82 48 63","ml_h2b":"Hosting","ml_p2":"This site is hosted by a professional web hosting provider. The host's contact details can be provided on request.","ml_h2c":"Intellectual property","ml_p3":"All content on this site (text, images, photographs, logos, icons) is protected by copyright. Any reproduction, even partial, requires prior authorization.","ml_h2d":"Personal data","ml_p4":"The information collected through the contact form is intended exclusively for Elody Bliss to respond to your requests. It is not shared with any third party. In accordance with the GDPR, you have the right to access, rectify and delete your data. To exercise these rights, contact me at elodybliss@gmail.com.","ml_p5":"This site uses cookies that are strictly necessary for it to function. To learn more, see my <a href=\"/politique-confidentialite\" class=\"inline-link\" aria-label=\"Politique de confidentialite\">privacy policy</a>.","__title":"Legal notice | Elody Bliss","logo_site":"<img src=\"images/logo-en-header.webp\" alt=\"Elody Bliss, hairstylist and make-up artist\" width=\"900\" height=\"555\">","nav_faq":"FAQ","nav_faq_m":"FAQ","ft_faq":"Frequently asked questions"};var frTitle=null;function apply(lang){var els=document.querySelectorAll('[data-i18n]');for(var i=0;i<els.length;i++){var el=els[i];var k=el.getAttribute('data-i18n');if(el.getAttribute('data-fr')===null){el.setAttribute('data-fr',el.innerHTML);}if(lang==='en'&&DICT_EN[k]!=null){el.innerHTML=DICT_EN[k];}else{el.innerHTML=el.getAttribute('data-fr');}}var phs=document.querySelectorAll('[data-i18n-ph]');for(var p=0;p<phs.length;p++){var pe=phs[p];var pk=pe.getAttribute('data-i18n-ph');if(pe.getAttribute('data-fr-ph')===null){pe.setAttribute('data-fr-ph',pe.getAttribute('placeholder')||'');}if(lang==='en'&&DICT_EN[pk]!=null){pe.setAttribute('placeholder',DICT_EN[pk]);}else{pe.setAttribute('placeholder',pe.getAttribute('data-fr-ph'));}}if(frTitle===null){frTitle=document.title;}document.title=(lang==='en'&&DICT_EN.__title)?DICT_EN.__title:frTitle;document.documentElement.lang=lang;try{localStorage.setItem('siteLang',lang);}catch(e){}var bs=document.querySelectorAll('.lang-btn');for(var j=0;j<bs.length;j++){bs[j].classList.toggle('active',bs[j].getAttribute('data-lang')===lang);}if(window.lucide&&lucide.createIcons){lucide.createIcons();}}function init(){var bs=document.querySelectorAll('.lang-btn');for(var j=0;j<bs.length;j++){(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-lang'));});})(bs[j]);}var saved='fr';try{saved=localStorage.getItem('siteLang')||'fr';}catch(e){}apply(saved);}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}})();</script>
+
 </body>
 </html>
