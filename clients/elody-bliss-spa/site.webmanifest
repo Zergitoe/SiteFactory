@@ -1,0 +1,16 @@
+{
+  "name": "Elody Bliss",
+  "short_name": "Elody Bliss",
+  "description": "Elody Bliss, coiffeuse et maquilleuse de mariée à Marseille depuis plus de 20 ans. Mise en beauté naturelle et bohème, Hair Spa et massage ayurvédique. Prenez rendez-vous.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C9A07A",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
