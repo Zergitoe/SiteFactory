@@ -490,10 +490,12 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 </style><style>/*titres-script*/
 h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:0.06em}
 @media(max-width:600px){h1 .script{font-size:1.25em}}
-</style><style>/*mots-eparpilles*/
-.mots-eparpilles{max-width:820px;margin:60px auto 8px;display:flex;flex-direction:column;align-items:flex-start}
-.mot-flottant{font-family:'Noto Serif Display',var(--font-display),serif;font-weight:300;color:#121010;line-height:1.5;white-space:nowrap}
-@media(max-width:700px){.mots-eparpilles{margin-top:36px;align-items:center;text-align:center}.mot-flottant{margin-left:0!important;line-height:1.7}}
+</style><style>/*mots-fond*/
+#page-maquillage-mariee{position:relative}
+#page-maquillage-mariee>section,#page-maquillage-mariee>.cta-band{position:relative;z-index:1}
+.mots-fond{position:absolute;inset:0;z-index:0;pointer-events:none;user-select:none;overflow:hidden}
+.mots-fond span{position:absolute;white-space:nowrap;font-family:'Noto Serif Display',var(--font-display),serif;font-weight:300;color:#121010;opacity:0.42}
+@media(max-width:1180px){.mots-fond{display:none}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -548,6 +550,28 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 
 <main id="main">
 <div class="page active" id="page-maquillage-mariee">
+<div class="mots-fond" aria-hidden="true">
+<span style="top:3%;left:74%;font-size:1.5rem">&ldquo;Perfectionniste&rdquo;</span>
+<span style="top:7%;left:2%;font-size:1.8rem">&ldquo;Élégance&rdquo;</span>
+<span style="top:11%;left:77%;font-size:1.35rem">&ldquo;Spray Fixateur&rdquo;</span>
+<span style="top:16%;left:1%;font-size:1.6rem">&ldquo;Quiet Luxury&rdquo;</span>
+<span style="top:21%;left:79%;font-size:1.9rem">&ldquo;Highlighter&rdquo;</span>
+<span style="top:26%;left:3%;font-size:1.45rem">&ldquo;Soft Glam&rdquo;</span>
+<span style="top:31%;left:75%;font-size:1.75rem">&ldquo;Raffinement&rdquo;</span>
+<span style="top:36%;left:2%;font-size:1.3rem">&ldquo;Minimalist&rdquo;</span>
+<span style="top:41%;left:76%;font-size:1.6rem">&ldquo;Yeux de Biche&rdquo;</span>
+<span style="top:46%;left:1%;font-size:1.5rem">&ldquo;Élégance&rdquo;</span>
+<span style="top:51%;left:78%;font-size:1.4rem">&ldquo;Quiet Luxury&rdquo;</span>
+<span style="top:56%;left:2%;font-size:1.65rem">&ldquo;Perfectionniste&rdquo;</span>
+<span style="top:61%;left:77%;font-size:1.5rem">&ldquo;Highlighter&rdquo;</span>
+<span style="top:66%;left:1%;font-size:1.55rem">&ldquo;Spray Fixateur&rdquo;</span>
+<span style="top:71%;left:80%;font-size:1.7rem">&ldquo;Soft Glam&rdquo;</span>
+<span style="top:76%;left:2%;font-size:1.4rem">&ldquo;Raffinement&rdquo;</span>
+<span style="top:81%;left:78%;font-size:1.5rem">&ldquo;Minimalist&rdquo;</span>
+<span style="top:86%;left:1%;font-size:1.75rem">&ldquo;Yeux de Biche&rdquo;</span>
+<span style="top:91%;left:77%;font-size:1.45rem">&ldquo;Élégance&rdquo;</span>
+<span style="top:95%;left:3%;font-size:1.55rem">&ldquo;Quiet Luxury&rdquo;</span>
+</div>
 <section class="page-hero" style="background:var(--bg-secondary)">
 <div class="container">
 <div class="page-hero-grid">
@@ -639,17 +663,6 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <img src="images/collage-makeup-conseils.webp" alt="Maquillage de mariee naturel, effet oeil de biche et teint bonne mine" width="900" height="1249" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px">
 </div>
 
-<div class="mots-eparpilles">
-<span class="mot-flottant" style="margin-left:15%;font-size:clamp(0.92rem,3.0vw,2rem)">&ldquo;Perfectionniste&rdquo;</span>
-<span class="mot-flottant" style="margin-left:43%;font-size:clamp(1.06rem,3.4vw,2.3rem)">&ldquo;Spray Fixateur&rdquo;</span>
-<span class="mot-flottant" style="margin-left:58%;font-size:clamp(0.92rem,3.0vw,2rem)">&ldquo;Quiet Luxury&rdquo;</span>
-<span class="mot-flottant" style="margin-left:14%;font-size:clamp(1.06rem,3.4vw,2.3rem)">&ldquo;Élégance&rdquo;</span>
-<span class="mot-flottant" style="margin-left:48%;font-size:clamp(1.24rem,4.1vw,2.7rem)">&ldquo;Highlighter&rdquo;</span>
-<span class="mot-flottant" style="margin-left:24%;font-size:clamp(1.24rem,4.1vw,2.7rem)">&ldquo;Raffinement&rdquo;</span>
-<span class="mot-flottant" style="margin-left:8%;font-size:clamp(0.85rem,2.8vw,1.85rem)">&ldquo;Soft Glam&rdquo;</span>
-<span class="mot-flottant" style="margin-left:48%;font-size:clamp(0.74rem,2.4vw,1.6rem)">&ldquo;Minimalist&rdquo;</span>
-<span class="mot-flottant" style="margin-left:5%;font-size:clamp(1.10rem,3.6vw,2.4rem)">&ldquo;Yeux de Biche&rdquo;</span>
-</div>
 <div style="text-align:center;margin-top:56px">
 <span class="sur-titre" data-i18n="mq_cls_k">Behind the scenes</span>
 <h2 class="titre-xl" style="margin-bottom:8px" data-i18n="mq_cls_h">Getting ready, in pictures</h2>
