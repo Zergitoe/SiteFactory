@@ -481,7 +481,11 @@ html body h3,html body h4,html body .shoot-titre,html body .avis-titre,html body
 html body p,html body li,html body .album-meta,html body .about-caption{color:#36322F}
 html body .cta-band h2{color:#fff}
 html body .cta-band p,html body footer p,html body footer li,html body footer a{color:inherit}
-</style><style>.make-magic{font-family:var(--font-script),cursive;font-size:clamp(2rem,5.4vw,3.8rem);color:#0D0B0B;text-align:center;margin:0;line-height:1.2}</style></head>
+</style><style>.make-magic{font-family:var(--font-script),cursive;font-size:clamp(2rem,5.4vw,3.8rem);color:#0D0B0B;text-align:center;margin:0;line-height:1.2}</style><style>/*hope*/
+.res-visuel{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:stretch}
+.res-vertical{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--font-display),serif;font-optical-sizing:none;font-variation-settings:"opsz" 11;font-weight:500;text-transform:uppercase;letter-spacing:0.22em;font-size:clamp(0.95rem,1.8vw,1.35rem);color:#0D0B0B;white-space:nowrap;display:flex;align-items:center;justify-content:center}
+@media(max-width:600px){.res-visuel{grid-template-columns:auto 1fr;gap:10px}.res-vertical{letter-spacing:0.16em;font-size:0.85rem}}
+</style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -502,9 +506,10 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 </div>
 </div>
 <a href="/mariages" class="nav-link" data-page="mariages"  data-i18n="nav_weddings">Weddings</a>
+<a href="/editorial" class="nav-link" data-page="editorial">Editorial</a>
 <a href="/a-propos" class="nav-link" data-page="a-propos" >About me</a>
 <a href="/faq" class="nav-link" data-page="faq" data-i18n="nav_faq">FAQ</a>
-<a href="/contact" class="nav-link active" data-page="contact" >Contact</a>
+<a href="/contact" class="nav-link active" data-page="contact" >Inquire</a>
 </nav>
 <div class="header-cta"><a href="tel:+33658824863" class="btn-primary" aria-label="Appeler Elody Bliss"><i data-lucide="phone" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_book">Book an appointment</span></a>
 <a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" aria-label="Reserver en ligne sur Planity"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> <span class="hide-mobile-txt" data-i18n="cta_online">Book online</span></a>
@@ -524,9 +529,10 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <a href="/massage-hair-spa" onclick="location.href='/massage-hair-spa'">Hair Spa &amp; Massage</a>
 </div>
 <span class="nav-link" data-page="mariages" onclick="location.href='/mariages'" data-i18n="nav_weddings_m">Weddings</span>
+<span class="nav-link" data-page="editorial" onclick="location.href='/editorial'">Editorial</span>
 <span class="nav-link" data-page="a-propos" onclick="location.href='/a-propos'">About me</span>
 <span class="nav-link" data-page="faq" onclick="location.href='/faq'" data-i18n="nav_faq_m">FAQ</span>
-<span class="nav-link" data-page="contact" onclick="location.href='/contact'">Contact</span>
+<span class="nav-link" data-page="contact" onclick="location.href='/contact'">Inquire</span>
 <a href="tel:+33658824863" class="btn-primary" style="margin-top:24px;text-align:center;justify-content:center" data-i18n="cta_book_m"><i data-lucide="phone" style="width:16px;height:16px"></i> Book an appointment</a>
 <a href="https://planity.com/elody-bliss-13013-marseille" target="_blank" rel="noopener" class="btn-primary" style="margin-top:12px;text-align:center;justify-content:center" aria-label="Reserver en ligne sur Planity" data-i18n="cta_online_m"><i data-lucide="calendar-check" style="width:16px;height:16px"></i> Book online</a>
 </div>
@@ -537,7 +543,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="container">
 <div class="contact-hero-grid">
 <div data-aos="fade-up">
-<span class="sur-titre">Contact</span>
+<span class="sur-titre">Inquire</span>
 <h1 data-i18n="ct_h1">Contact Elody Bliss in Marseille<br><span class="h1-sub">Let's talk about your wedding</span></h1>
 <p data-i18n="ct_intro">Contact me to talk about your theme, your wishes and book your date at my private studio in Marseille. I would be delighted to accompany you for the most beautiful day of your life. Feel free to send me a text or a WhatsApp with your request.</p>
 </div>
@@ -608,7 +614,10 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <h2 style="margin-bottom:8px" data-i18n="ct_res_h">How to book your date</h2>
 </div>
 <div class="galerie-clic" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center;margin-top:24px">
+<div class="res-visuel">
+<span class="res-vertical">Hope to see you soon !!</span>
 <img src="images/contact-reservation.webp" alt="Wedding moments styled by Elody Bliss" width="900" height="1272" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;cursor:pointer" onclick="openLightbox(this)">
+</div>
 <div>
 <p data-i18n="ct_res_1"><strong>Step 1.</strong> To secure your wedding date, a 100&nbsp;euro deposit is paid by bank transfer.</p>
 <p data-i18n="ct_res_2"><strong>Step 2.</strong> Once you have fallen in love with your wedding dress, text me to arrange your hair and makeup trial appointment.</p>
@@ -647,7 +656,8 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <li><a href="/mariages" aria-label="Portfolio mariages" style="cursor:pointer" data-i18n="ft_weddings">My weddings</a></li>
 <li><a href="/a-propos" aria-label="A propos" style="cursor:pointer">About me</a></li>
 <li><a href="/faq" aria-label="Questions frequentes" style="cursor:pointer" data-i18n="ft_faq">Frequently asked questions</a></li>
-<li><a href="/contact" aria-label="Contact" style="cursor:pointer">Contact</a></li>
+<li><a href="/editorial" aria-label="Editorial Bride Diaries" style="cursor:pointer">Editorial</a></li>
+<li><a href="/contact" aria-label="Contact" style="cursor:pointer">Inquire</a></li>
 </ul>
 </div>
 <div>
@@ -730,6 +740,7 @@ var pagesSeoData = {
  'a-propos': { title: 'Elody Bliss, votre artiste beaute mariee', description: 'Elody Bliss, votre artiste beaute mariee - Elody Bliss.', canonical: '/a-propos' },
  'contact': { title: 'Contactez Elody Bliss a MarseilleParlons de votre mariage', description: 'Contactez Elody Bliss a MarseilleParlons de votre mariage - Elody Bliss.', canonical: '/contact' },
  'faq': { title: 'Questions frequentes', description: 'Questions frequentes - Elody Bliss.', canonical: '/faq' },
+ 'editorial': { title: 'Bride Diaries, editorial hairstyle and make-up', description: 'Half-up styles, updos, waves and bridal make-up by Elody Bliss, Marseille.', canonical: '/editorial' },
  'mentions-legales': { title: 'Mentions legales', description: 'Mentions legales - Elody Bliss.', canonical: '/mentions-legales' },
  'politique-confidentialite': { title: 'Politique de confidentialite', description: 'Politique de confidentialite - Elody Bliss.', canonical: '/politique-confidentialite' }
 };
