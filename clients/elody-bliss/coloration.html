@@ -481,6 +481,15 @@ html body h3,html body h4,html body .shoot-titre,html body .avis-titre,html body
 html body p,html body li,html body .album-meta,html body .about-caption{color:#36322F}
 html body .cta-band h2{color:#fff}
 html body .cta-band p,html body footer p,html body footer li,html body footer a{color:inherit}
+</style><style>/*mots-manuscrits*/
+.mot-styled{font-family:var(--font-display),serif;font-optical-sizing:none;font-variation-settings:"opsz" 11;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:#0D0B0B;line-height:1}
+.mot-script{font-family:var(--font-script),cursive;color:#0D0B0B;line-height:0.9}
+.french-elegance{display:block;margin:0 0 10px;line-height:1}
+.french-elegance .mot-styled{font-size:clamp(1.5rem,3.4vw,2.6rem)}
+.french-elegance .mot-script{font-size:clamp(2rem,4.6vw,3.4rem);margin-left:-0.1em}
+.col-mot{position:absolute;z-index:3;font-family:var(--font-script),cursive;color:#0D0B0B;white-space:nowrap;pointer-events:none;line-height:0.9}
+.col-zone{position:relative}
+@media(max-width:900px){.col-mot{display:none}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -534,21 +543,23 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <main id="main">
 <div class="page active" id="page-coloration">
 <section class="page-hero" style="background:var(--bg-secondary)">
-<div class="container"><div class="page-hero-grid">
+<div class="container"><div class="page-hero-grid col-zone">
 <div data-aos="fade-up">
 <span class="sur-titre">Hair color</span>
 <h1 data-i18n="col_h1">Natural coloring and ombré hair in Marseille<br><span class="h1-sub">Plant-based pigments to enhance and care for your hair</span></h1>
 <p data-i18n="col_intro">At Elody Bliss, coloring is done with natural, plant-based pigments that respect the hair fiber while bringing lasting shine. Ombré hair adds a luminous, sun-kissed gradient that is natural and harmonious.</p>
 <a href="tel:+33658824863" class="btn-primary" style="margin-top:20px" data-i18n="col_btn"><i data-lucide="calendar" style="width:18px;height:18px"></i> Book an appointment</a>
 </div>
-<div class="page-hero-img" data-aos="fade-up" data-aos-delay="150"><img src="images/coloration-hero.webp" alt="Balayage blond lumineux sur cheveux longs ondules, realise par Elody Bliss" width="900" height="1419" loading="eager" fetchpriority="high" decoding="async"></div>
+<span class="col-mot" style="left:50%;top:10px;transform:translateX(-55%) rotate(-5deg);font-size:clamp(1.9rem,3.6vw,3rem)">Blondie</span><div class="page-hero-img" data-aos="fade-up" data-aos-delay="150"><img src="images/coloration-hero.webp" alt="Balayage blond lumineux sur cheveux longs ondules, realise par Elody Bliss" width="900" height="1419" loading="eager" fetchpriority="high" decoding="async"></div>
 </div></div>
 </section>
-<section><div class="container"><div class="page-content" data-aos="fade-up">
+<section><div class="container"><div class="page-content col-zone" data-aos="fade-up">
 <span class="filet"></span>
+<span class="col-mot" style="left:-2px;top:-58px;transform:rotate(-7deg);font-size:clamp(1.8rem,3.4vw,2.9rem)">Highlight<br><span style="margin-left:1.2em;display:inline-block">your hair</span></span>
 <h2 data-i18n="col_h2a">Natural coloring with plant-based pigments</h2>
 <p data-i18n="col_p1">The pigments used come from plants and natural materials, selected for their ability to penetrate the hair fiber without damaging it. The result is a deep, shiny and harmonious color. With each application, the hair fiber is nourished, the cuticles close and the hair's natural shine is amplified.</p>
 
+<span class="col-mot" style="right:0;top:-46px;transform:rotate(-6deg);font-size:clamp(1.8rem,3.4vw,2.9rem)">Blow-dry</span>
 <h2 data-i18n="col_h2b">Ombré hair</h2>
 <p data-i18n="col_p2">A natural, gradual color gradient, inspired by sunlight on the hair. No visible line: just a smooth transition between the roots and the ends, in tones chosen together.</p>
 
@@ -562,6 +573,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <img src="images/img-28b-couleur.webp" alt="Balayage lumineux sur cheveux longs realise par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
 <video controls playsinline preload="none" poster="videos/couleur-3-poster.webp" aria-label="Ombre hair cuivre, degrade naturel sans demarcation"><source src="videos/couleur-3.mp4" type="video/mp4"></video>
 </div>
+<span class="mot-script" style="display:block;text-align:right;font-size:clamp(2rem,4.2vw,3.4rem);transform:rotate(-6deg);transform-origin:right center;margin:6px 10px 0 0">Brunette</span>
 
 <h2 data-i18n="col_h2c">Who is it for?</h2>
 <ul>

@@ -481,7 +481,7 @@ html body h3,html body h4,html body .shoot-titre,html body .avis-titre,html body
 html body p,html body li,html body .album-meta,html body .about-caption{color:#36322F}
 html body .cta-band h2{color:#fff}
 html body .cta-band p,html body footer p,html body footer li,html body footer a{color:inherit}
-</style></head>
+</style><style>.make-magic{font-family:var(--font-script),cursive;font-size:clamp(2rem,5.4vw,3.8rem);color:#0D0B0B;text-align:center;margin:0;line-height:1.2}</style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -547,11 +547,14 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 </div>
 </div>
 </section>
+<section style="padding-bottom:0"><div class="container">
+<p class="make-magic">Together We Can Make Magic</p>
+</div></section>
 <section><div class="container">
 <div class="contact-grid" data-aos="fade-up">
 <div>
 <h2 style="margin-bottom:24px" data-i18n="ct_h2a">Contact details</h2>
-<div class="contact-info-item"><i data-lucide="phone" style="width:20px;height:20px"></i><div data-i18n="ct_phone"><strong>Phone</strong><br><a href="tel:+33658824863" style="color:var(--accent)">06 58 82 48 63</a></div></div>
+<div class="contact-info-item"><i data-lucide="phone" style="width:20px;height:20px"></i><div data-i18n="ct_phone"><strong>Phone</strong><br><a href="tel:+33658824863" style="color:var(--accent)">+33 6 58 82 48 63</a></div></div>
 <div class="contact-info-item"><i data-lucide="mail" style="width:20px;height:20px"></i><div><strong>Email</strong><br><a href="mailto:elodybliss@gmail.com" style="color:var(--accent)">elodybliss@gmail.com</a></div></div>
 <div class="contact-info-item"><i data-lucide="map-pin" style="width:20px;height:20px"></i><div data-i18n="ct_studio"><strong>Private studio</strong><br>Av. de Saint-Jerome, 13013 Marseille</div></div>
 <div class="contact-info-item"><i data-lucide="clock" style="width:20px;height:20px"></i><div data-i18n="ct_hours"><strong>Hours</strong><br>By appointment</div></div>
@@ -573,6 +576,10 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="form-group"><label for="contact-name" data-i18n="ct_l_last">Last name *</label><input type="text" id="contact-name" name="Nom" required placeholder="e.g. Smith" data-i18n-ph="ct_ph_last"></div>
 </div>
 <div class="form-row">
+<div class="form-group"><label for="contact-partner">Partner's first name</label><input type="text" id="contact-partner" name="Prenom du partenaire" placeholder="e.g. Thomas"></div>
+<div class="form-group"><label for="contact-insta">Insta</label><input type="text" id="contact-insta" name="Instagram" placeholder="let's be friends"></div>
+</div>
+<div class="form-row">
 <div class="form-group"><label for="contact-email">Email *</label><input type="email" id="contact-email" name="email" required placeholder="e.g. marie@email.com" data-i18n-ph="ct_ph_email"></div>
 <div class="form-group"><label for="contact-phone" data-i18n="ct_l_phone">Phone *</label><input type="tel" id="contact-phone" name="Téléphone" required placeholder="e.g. 06 12 34 56 78" data-i18n-ph="ct_ph_phone"></div>
 </div>
@@ -581,13 +588,15 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="form-group"><label for="contact-time" data-i18n="ct_l_time">Ceremony time</label><input type="time" id="contact-time" name="Heure de la cérémonie"></div>
 </div>
 <div class="form-group"><label for="contact-place" data-i18n="ct_l_place">Wedding venue</label><input type="text" id="contact-place" name="Lieu du mariage" placeholder="e.g. Château de la Reynaude, Aix-en-Provence" data-i18n-ph="ct_ph_place"></div>
-<div class="form-group"><label for="contact-message" data-i18n="ct_l_msg">Other request</label><textarea id="contact-message" name="Autre demande" rows="4" placeholder="Massage, color or Hair Spa: tell me your wishes..." data-i18n-ph="ct_ph_msg"></textarea></div>
+<div class="form-group"><label for="contact-found">How did you find me? (I'm so glad you did!)</label><input type="text" id="contact-found" name="Comment m avez-vous trouvee" placeholder="Instagram, Mariages.net, a friend..."></div>
+<div class="form-group"><label for="contact-party">How many bridesmaids and guests would you like me to style?</label><input type="text" id="contact-party" name="Nombre de personnes" placeholder="e.g. 3 bridesmaids and my mum"></div>
+<div class="form-group"><label for="contact-message" data-i18n="ct_l_msg">Tell me everything</label><textarea id="contact-message" name="Autre demande" rows="6" placeholder="Hey!! I would like to know a little bit more about you, please feel free to tell me your love story.&#10;How do you imagine your hairstyle?&#10;What about your make-up?&#10;If you had one love song about the two of you to share, which one would it be?" data-i18n-ph="ct_ph_msg"></textarea></div>
 <input type="checkbox" name="botcheck" style="display:none">
 <button type="submit" class="btn-primary" style="width:100%;justify-content:center" data-i18n="ct_send"><i data-lucide="send" style="width:18px;height:18px"></i> Send my message</button>
 <p class="rgpd-text" data-i18n="ct_rgpd">By submitting this form, you agree that your data will be processed as part of your request. <a href="/politique-confidentialite" class="inline-link" aria-label="Politique de confidentialite">Privacy policy</a></p>
 <div id="form-error"></div>
 </form>
-<div id="form-success"><i data-lucide="check-circle" style="width:48px;height:48px;color:var(--accent);margin-bottom:16px"></i><h3 data-i18n="ct_succ_h">Thank you for your message!</h3><p data-i18n="ct_succ_p">Elody will reply within 24 hours. See you very soon.</p><p style="font-family:var(--font-heading);font-style:italic;font-size:1.2rem;color:var(--accent);margin-top:16px">Love, Elody</p></div>
+<div id="form-success"><i data-lucide="check-circle" style="width:48px;height:48px;color:var(--rose-hover);margin-bottom:16px"></i><h3>Thank you for your message!</h3><p>I will come back to you as soon as possible.</p><p style="font-style:italic;color:var(--text-muted)">Merci pour votre message, je reviens vers vous le plus rapidement possible.</p></div>
 </div>
 </div>
 </div></section>
@@ -601,7 +610,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="galerie-clic" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center;margin-top:24px">
 <img src="images/contact-reservation.webp" alt="Reservation d'une date de mariage avec Elody Bliss, mode d'emploi" width="800" height="1109" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;cursor:pointer" onclick="openLightbox(this)">
 <div>
-<p data-i18n="ct_res_1"><strong>Step 1.</strong> To secure your wedding date, a 100 euro deposit is paid by bank transfer.</p>
+<p data-i18n="ct_res_1"><strong>Step 1.</strong> To secure your wedding date, a 100&nbsp;euro deposit is paid by bank transfer.</p>
 <p data-i18n="ct_res_2"><strong>Step 2.</strong> Once you have fallen in love with your wedding dress, text me to arrange your hair and makeup trial appointment.</p>
 <p data-i18n="ct_res_3">Ideally, just before that, send me a text so we can set up a phone call and talk through your wishes together.</p>
 <p style="margin-bottom:0"><a href="tel:+33658824863" class="btn-primary" style="margin-top:8px"><i data-lucide="phone" style="width:18px;height:18px"></i> 06 58 82 48 63</a></p>

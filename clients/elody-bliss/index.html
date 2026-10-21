@@ -496,6 +496,15 @@ html body h3,html body h4,html body .shoot-titre,html body .avis-titre,html body
 html body p,html body li,html body .album-meta,html body .about-caption{color:#36322F}
 html body .cta-band h2{color:#fff}
 html body .cta-band p,html body footer p,html body footer li,html body footer a{color:inherit}
+</style><style>/*mots-manuscrits*/
+.mot-styled{font-family:var(--font-display),serif;font-optical-sizing:none;font-variation-settings:"opsz" 11;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:#0D0B0B;line-height:1}
+.mot-script{font-family:var(--font-script),cursive;color:#0D0B0B;line-height:0.9}
+.french-elegance{display:block;margin:0 0 10px;line-height:1}
+.french-elegance .mot-styled{font-size:clamp(1.5rem,3.4vw,2.6rem)}
+.french-elegance .mot-script{font-size:clamp(2rem,4.6vw,3.4rem);margin-left:-0.1em}
+.col-mot{position:absolute;z-index:3;font-family:var(--font-script),cursive;color:#0D0B0B;white-space:nowrap;pointer-events:none;line-height:0.9}
+.col-zone{position:relative}
+@media(max-width:900px){.col-mot{display:none}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -571,6 +580,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="container">
 <div class="hero-grid">
 <div class="hero-text" data-aos="fade-up">
+<span class="french-elegance"><span class="mot-styled">French</span> <span class="mot-script">Élégance</span></span>
 <div class="hero-badge" data-i18n="hero_badge">In Marseille since 2016</div>
 <h1 data-i18n="hero_h1">Wedding makeup artist &amp; hairstylist in Marseille<br><span class="h1-sub">Your beauty fairy makes you more radiant than ever on your wedding day ✨</span></h1>
 <p class="hero-subtitle" data-i18n="hero_sub">Over 20 years of experience devoted to your natural, boho style beauty. Elody Bliss reveals your inner glow for the most beautiful day of your life, in Marseille, across the PACA region and abroad.</p>
