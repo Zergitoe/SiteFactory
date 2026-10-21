@@ -495,8 +495,9 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 #page-maquillage-mariee>section,#page-maquillage-mariee>.cta-band{position:relative;z-index:1;background:transparent}
 #page-maquillage-mariee>section.page-hero{background:var(--bg-secondary)}
 .mots-fond{position:absolute;inset:0;z-index:0;pointer-events:none;user-select:none;overflow:hidden}
-.mots-fond span{position:absolute;white-space:nowrap;font-family:'Noto Serif Display',var(--font-display),serif;font-weight:300;color:#121010;opacity:0.2}
-@media(max-width:860px){.mots-fond span{opacity:0.13;font-size:1.2rem!important}}
+.mots-fond span{position:absolute;white-space:nowrap;font-family:'Noto Serif Display',var(--font-display),serif;font-weight:300;color:#121010;opacity:0.2;top:calc(var(--t) * 1%);left:calc(var(--l) * 1%);font-size:calc(var(--s) * 1rem)}
+@media(max-width:900px){.mots-fond span{opacity:0.18;left:calc(var(--l) * 0.6%);font-size:calc(var(--s) * 0.72rem)}}
+@media(max-width:560px){.mots-fond span{opacity:0.17;left:calc(var(--l) * 0.42%);font-size:calc(var(--s) * 0.58rem)}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -552,32 +553,32 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <main id="main">
 <div class="page active" id="page-maquillage-mariee">
 <div class="mots-fond" aria-hidden="true">
-<span style="top:2%;left:58%;font-size:1.7rem">&ldquo;Perfectionniste&rdquo;</span>
-<span style="top:5%;left:12%;font-size:2rem">&ldquo;Élégance&rdquo;</span>
-<span style="top:8%;left:72%;font-size:1.5rem">&ldquo;Quiet Luxury&rdquo;</span>
-<span style="top:12%;left:34%;font-size:1.6rem">&ldquo;Soft Glam&rdquo;</span>
-<span style="top:15%;left:4%;font-size:1.8rem">&ldquo;Spray Fixateur&rdquo;</span>
-<span style="top:19%;left:63%;font-size:2.1rem">&ldquo;Highlighter&rdquo;</span>
-<span style="top:23%;left:22%;font-size:1.45rem">&ldquo;Minimalist&rdquo;</span>
-<span style="top:26%;left:76%;font-size:1.9rem">&ldquo;Raffinement&rdquo;</span>
-<span style="top:30%;left:8%;font-size:1.7rem">&ldquo;Yeux de Biche&rdquo;</span>
-<span style="top:34%;left:48%;font-size:1.55rem">&ldquo;Élégance&rdquo;</span>
-<span style="top:38%;left:70%;font-size:1.8rem">&ldquo;Quiet Luxury&rdquo;</span>
-<span style="top:42%;left:16%;font-size:1.6rem">&ldquo;Perfectionniste&rdquo;</span>
-<span style="top:45%;left:60%;font-size:2rem">&ldquo;Soft Glam&rdquo;</span>
-<span style="top:49%;left:3%;font-size:1.75rem">&ldquo;Highlighter&rdquo;</span>
-<span style="top:53%;left:44%;font-size:1.5rem">&ldquo;Spray Fixateur&rdquo;</span>
-<span style="top:57%;left:74%;font-size:1.7rem">&ldquo;Raffinement&rdquo;</span>
-<span style="top:61%;left:10%;font-size:1.9rem">&ldquo;Minimalist&rdquo;</span>
-<span style="top:65%;left:52%;font-size:1.6rem">&ldquo;Yeux de Biche&rdquo;</span>
-<span style="top:69%;left:78%;font-size:1.8rem">&ldquo;Élégance&rdquo;</span>
-<span style="top:73%;left:20%;font-size:1.5rem">&ldquo;Quiet Luxury&rdquo;</span>
-<span style="top:77%;left:64%;font-size:1.65rem">&ldquo;Perfectionniste&rdquo;</span>
-<span style="top:81%;left:6%;font-size:2rem">&ldquo;Soft Glam&rdquo;</span>
-<span style="top:85%;left:42%;font-size:1.55rem">&ldquo;Highlighter&rdquo;</span>
-<span style="top:88%;left:72%;font-size:1.75rem">&ldquo;Raffinement&rdquo;</span>
-<span style="top:92%;left:14%;font-size:1.6rem">&ldquo;Minimalist&rdquo;</span>
-<span style="top:96%;left:56%;font-size:1.85rem">&ldquo;Yeux de Biche&rdquo;</span>
+<span style="--t:2;--l:58;--s:1.7">&ldquo;Perfectionniste&rdquo;</span>
+<span style="--t:5;--l:12;--s:2">&ldquo;Élégance&rdquo;</span>
+<span style="--t:8;--l:72;--s:1.5">&ldquo;Quiet Luxury&rdquo;</span>
+<span style="--t:12;--l:34;--s:1.6">&ldquo;Soft Glam&rdquo;</span>
+<span style="--t:15;--l:4;--s:1.8">&ldquo;Spray Fixateur&rdquo;</span>
+<span style="--t:19;--l:63;--s:2.1">&ldquo;Highlighter&rdquo;</span>
+<span style="--t:23;--l:22;--s:1.45">&ldquo;Minimalist&rdquo;</span>
+<span style="--t:26;--l:76;--s:1.9">&ldquo;Raffinement&rdquo;</span>
+<span style="--t:30;--l:8;--s:1.7">&ldquo;Yeux de Biche&rdquo;</span>
+<span style="--t:34;--l:48;--s:1.55">&ldquo;Élégance&rdquo;</span>
+<span style="--t:38;--l:70;--s:1.8">&ldquo;Quiet Luxury&rdquo;</span>
+<span style="--t:42;--l:16;--s:1.6">&ldquo;Perfectionniste&rdquo;</span>
+<span style="--t:45;--l:60;--s:2">&ldquo;Soft Glam&rdquo;</span>
+<span style="--t:49;--l:3;--s:1.75">&ldquo;Highlighter&rdquo;</span>
+<span style="--t:53;--l:44;--s:1.5">&ldquo;Spray Fixateur&rdquo;</span>
+<span style="--t:57;--l:74;--s:1.7">&ldquo;Raffinement&rdquo;</span>
+<span style="--t:61;--l:10;--s:1.9">&ldquo;Minimalist&rdquo;</span>
+<span style="--t:65;--l:52;--s:1.6">&ldquo;Yeux de Biche&rdquo;</span>
+<span style="--t:69;--l:78;--s:1.8">&ldquo;Élégance&rdquo;</span>
+<span style="--t:73;--l:20;--s:1.5">&ldquo;Quiet Luxury&rdquo;</span>
+<span style="--t:77;--l:64;--s:1.65">&ldquo;Perfectionniste&rdquo;</span>
+<span style="--t:81;--l:6;--s:2">&ldquo;Soft Glam&rdquo;</span>
+<span style="--t:85;--l:42;--s:1.55">&ldquo;Highlighter&rdquo;</span>
+<span style="--t:88;--l:72;--s:1.75">&ldquo;Raffinement&rdquo;</span>
+<span style="--t:92;--l:14;--s:1.6">&ldquo;Minimalist&rdquo;</span>
+<span style="--t:96;--l:56;--s:1.85">&ldquo;Yeux de Biche&rdquo;</span>
 </div>
 <section class="page-hero" style="background:var(--bg-secondary)">
 <div class="container">
