@@ -464,9 +464,10 @@ header nav .nav-link svg{display:block;flex:0 0 auto}
 html body .cookie-btn-accept{background:var(--rose);color:var(--text-primary)}
 html body .toggle-switch.on{background:var(--rose-hover)}
 </style><style>.avis-titre{font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-primary);margin:0 0 8px}.avis-note{font-size:1rem;color:var(--text-secondary);margin-bottom:16px}.avis-note-etoiles{color:#E0A83B;letter-spacing:2px}</style><style>.avis-carousel{display:flex;align-items:center;gap:14px;max-width:1260px;margin:0 auto}.avis-carousel .avis-track{flex:1;min-width:0;display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:6px 4px 14px;max-width:none;margin:0}.avis-carousel .avis-track::-webkit-scrollbar{display:none}.avis-carousel .car-btn{flex:0 0 auto;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--rose-hover);background:#fff;color:var(--text-primary);font-size:1.7rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:0 3px 12px rgba(58,51,46,0.1)}.avis-carousel .car-btn:hover{background:var(--rose)}@media(max-width:640px){.avis-carousel .car-btn{width:36px;height:36px;font-size:1.3rem}}.avis-carousel .testimonial-card{flex:0 0 calc((100% - 48px)/3);scroll-snap-align:start}@media(max-width:900px){.avis-carousel .testimonial-card{flex-basis:calc((100% - 24px)/2)}}@media(max-width:640px){.avis-carousel .testimonial-card{flex-basis:100%}.avis-carousel{gap:8px}}</style><style>.zone-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:900px;margin:24px auto 0}.zone-item{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:50px;font-size:.9rem;font-weight:600;background:var(--bg-secondary);border:1px solid var(--card-border)}.zone-item svg{width:15px;height:15px}@media(max-width:640px){.zone-grid{gap:8px}.zone-item{padding:6px 12px;font-size:.82rem}.zone-item svg{width:13px;height:13px}.avis-carousel .car-btn{display:none}.avis-carousel .testimonial-card{padding:20px 20px 18px;flex-basis:88%}.avis-carousel .testimonial-card blockquote{font-size:1rem;line-height:1.55;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}.avis-carousel .avis-titre{font-size:1.05rem;margin-bottom:4px}.avis-carousel .stars-container{margin-bottom:8px}.avis-carousel .stars-container svg{width:14px;height:14px}}</style><style>.header-logo img{height:62px;width:auto}@media(max-width:600px){.header-logo img{height:48px}}</style><style>
-.hero-slideshow{position:relative;height:clamp(520px,88vh,940px);margin-top:84px;overflow:hidden;background:#efe9e7}
+.hero-slideshow{position:relative;height:clamp(520px,82vh,860px);margin-top:84px;overflow:hidden;background:#efe9e7}
 .hero-slides{position:absolute;inset:0}
-.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero-slides picture{display:contents}
+.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;transition:opacity 1.6s ease}
 .hero-slides img.actif{opacity:1}
 .hero-slideshow::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(255,255,255,0) 6%,rgba(255,255,255,0.26) 38%,rgba(255,255,255,0.38) 62%,rgba(255,255,255,0.62) 100%)}
 .hero-accroche{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
@@ -561,14 +562,14 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <div class="page active" id="page-home">
 <section class="hero-slideshow" aria-label="Bienvenue">
 <div class="hero-slides">
-<img src="images/hero-1.webp" alt="Les maries enlaces devant un mas provencal" class="actif" fetchpriority="high" decoding="async" style="object-position:center 42%">
-<img src="images/hero-2.webp" alt="Couple de maries dans un champ de lavande" loading="lazy" decoding="async" style="object-position:center 32%">
-<img src="images/hero-3.webp" alt="La mariee tourne sous le bras de son epoux, ciel bleu" loading="lazy" decoding="async" style="object-position:center 26%">
-<img src="images/hero-4.webp" alt="Les maries au coucher du soleil dans la lavande" loading="lazy" decoding="async" style="object-position:center 18%">
-<img src="images/hero-5.webp" alt="Ceremonie devant une arche de fleurs coloree" loading="lazy" decoding="async" style="object-position:center 46%">
-<img src="images/hero-6.webp" alt="La mariee virevolte dans le parc" loading="lazy" decoding="async" style="object-position:center 10%">
-<img src="images/hero-7.webp" alt="Baiser des maries a contre-jour" loading="lazy" decoding="async" style="object-position:center 38%">
-<img src="images/hero-8.webp" alt="Les maries main dans la main dans les champs" loading="lazy" decoding="async" style="object-position:center 30%">
+<picture><source media="(min-width:701px)" srcset="images/hero-1-pc.webp"><img src="images/hero-1.webp" alt="Les maries enlaces devant un mas provencal" class="actif" fetchpriority="high" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-2-pc.webp"><img src="images/hero-2.webp" alt="Couple de maries dans un champ de lavande" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-3-pc.webp"><img src="images/hero-3.webp" alt="La mariee tourne sous le bras de son epoux, ciel bleu" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-4-pc.webp"><img src="images/hero-4.webp" alt="Les maries au coucher du soleil dans la lavande" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-5-pc.webp"><img src="images/hero-5.webp" alt="Ceremonie devant une arche de fleurs coloree" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-6-pc.webp"><img src="images/hero-6.webp" alt="La mariee virevolte dans le parc" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-7-pc.webp"><img src="images/hero-7.webp" alt="Baiser des maries a contre-jour" loading="lazy" decoding="async"></picture>
+<picture><source media="(min-width:701px)" srcset="images/hero-8-pc.webp"><img src="images/hero-8.webp" alt="Les maries main dans la main dans les champs" loading="lazy" decoding="async"></picture>
 </div>
 <div class="hero-accroche">
 <p class="hero-enchante" data-i18n="hero_enchante">Welcome</p>
