@@ -31,8 +31,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Pinyon+Script&family=Lato:wght@300;400;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Pinyon+Script&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&family=Pinyon+Script&family=Lato:wght@300;400;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&family=Pinyon+Script&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
 <script type="application/ld+json">
 {
@@ -490,6 +490,10 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 </style><style>/*titres-script*/
 h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:0.06em}
 @media(max-width:600px){h1 .script{font-size:1.25em}}
+</style><style>/*mots-eparpilles*/
+.mots-eparpilles{max-width:820px;margin:60px auto 8px;display:flex;flex-direction:column;align-items:flex-start}
+.mot-flottant{font-family:'Noto Serif Display',var(--font-display),serif;font-weight:300;color:#121010;line-height:1.5;white-space:nowrap}
+@media(max-width:700px){.mots-eparpilles{margin-top:36px;align-items:center;text-align:center}.mot-flottant{margin-left:0!important;line-height:1.7}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -593,7 +597,6 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <li data-i18n="mq_hyg_l4"><strong>My hands</strong> are washed before each person.</li>
 </ul>
 
-<span class="mot-deco" aria-hidden="true">Perfection</span>
 
 <h2 data-i18n="mq_skin_h">Skin care, preparing your skin</h2>
 <p data-i18n="mq_skin_p1">Your makeup will look far more radiant on well-prepared skin. A make-up artist is like a painter facing a canvas: the result is always better on a clean, well-prepared surface. No need to worry, we are all born with different skin that changes over time. What matters is looking after it properly.</p>
@@ -606,7 +609,6 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <p data-i18n="mq_skin_p2">On well-exfoliated, well-hydrated skin, makeup glides on, spreads evenly and blends perfectly with your face. It also lasts longer: applied to skin free of the tiny dead cells invisible to the naked eye, it stays put far longer. A professional setting spray seals everything at the end of the session.</p>
 <p data-i18n="mq_skin_p3">Without a skincare routine, skin is often dehydrated and tight, makeup slips or seems to be drunk straight up by the skin. The more you pamper it, the more it gives back, and the less product is needed on the big day.</p>
 
-<span class="mot-deco" aria-hidden="true">Élégance</span>
 
 <h2 data-i18n="mq_6m_h">6 months before, getting ready gently</h2>
 <p data-i18n="mq_6m_p1">Six months before the wedding, pamper your meals. Favour food that is good for skin and hair: avocado, almonds, walnuts, wild oily fish. Small blue fish such as sardines, mackerel and anchovies are less exposed to heavy metals.</p>
@@ -614,7 +616,6 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <p data-i18n="mq_6m_p3"><strong>Drink water, it's gonna be your best friend!!</strong> Aim for 1.5 litres a day, spread across the day rather than all at once.</p>
 <p data-i18n="mq_6m_p4">And why not move a little more often? Running helps flush out toxins, dancing works on balance, yoga and meditation help you stretch, release pressure and ground yourself.</p>
 
-<span class="mot-deco" aria-hidden="true">Highlighter</span>
 
 <h2 data-i18n="mq_h2c">Who is it for?</h2>
 <ul>
@@ -638,6 +639,17 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <img src="images/collage-makeup-conseils.webp" alt="Maquillage de mariee naturel, effet oeil de biche et teint bonne mine" width="900" height="1249" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px">
 </div>
 
+<div class="mots-eparpilles">
+<span class="mot-flottant" style="margin-left:15%;font-size:clamp(0.92rem,3.0vw,2rem)">&ldquo;Perfectionniste&rdquo;</span>
+<span class="mot-flottant" style="margin-left:43%;font-size:clamp(1.06rem,3.4vw,2.3rem)">&ldquo;Spray Fixateur&rdquo;</span>
+<span class="mot-flottant" style="margin-left:58%;font-size:clamp(0.92rem,3.0vw,2rem)">&ldquo;Quiet Luxury&rdquo;</span>
+<span class="mot-flottant" style="margin-left:14%;font-size:clamp(1.06rem,3.4vw,2.3rem)">&ldquo;Élégance&rdquo;</span>
+<span class="mot-flottant" style="margin-left:48%;font-size:clamp(1.24rem,4.1vw,2.7rem)">&ldquo;Highlighter&rdquo;</span>
+<span class="mot-flottant" style="margin-left:24%;font-size:clamp(1.24rem,4.1vw,2.7rem)">&ldquo;Raffinement&rdquo;</span>
+<span class="mot-flottant" style="margin-left:8%;font-size:clamp(0.85rem,2.8vw,1.85rem)">&ldquo;Soft Glam&rdquo;</span>
+<span class="mot-flottant" style="margin-left:48%;font-size:clamp(0.74rem,2.4vw,1.6rem)">&ldquo;Minimalist&rdquo;</span>
+<span class="mot-flottant" style="margin-left:5%;font-size:clamp(1.10rem,3.6vw,2.4rem)">&ldquo;Yeux de Biche&rdquo;</span>
+</div>
 <div style="text-align:center;margin-top:56px">
 <span class="sur-titre" data-i18n="mq_cls_k">Behind the scenes</span>
 <h2 class="titre-xl" style="margin-bottom:8px" data-i18n="mq_cls_h">Getting ready, in pictures</h2>
