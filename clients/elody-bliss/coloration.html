@@ -479,6 +479,14 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 </style><style>/*titres-script*/
 h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:0.06em}
 @media(max-width:600px){h1 .script{font-size:1.25em}}
+</style><style>/*mots-couleur*/
+.hero-col-photo{display:flex;flex-direction:column}
+.mot-sous-photo{display:block;text-align:center;font-family:var(--font-script),cursive;color:#0D0B0B;font-size:clamp(1.9rem,3.6vw,3rem);line-height:1;margin:14px 0 0;transform:rotate(-4deg)}
+.duo-mots{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:14px 6px 0}
+.duo-mots .mot-script{font-size:clamp(2rem,4.2vw,3.4rem);line-height:1;color:#0D0B0B}
+.mot-blondie{transform:rotate(9deg);transform-origin:left center}
+.mot-brunette{transform:rotate(-6deg);transform-origin:right center}
+@media(max-width:600px){.duo-mots{gap:10px;margin-top:10px}.duo-mots .mot-script{font-size:1.5rem}}
 </style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
@@ -539,16 +547,16 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <p data-i18n="col_intro">At Elody Bliss, coloring is done with natural, plant-based pigments that respect the hair fiber while bringing lasting shine. Ombré hair adds a luminous, sun-kissed gradient that is natural and harmonious.</p>
 <a href="tel:+33658824863" class="btn-primary" style="margin-top:20px" data-i18n="col_btn"><i data-lucide="calendar" style="width:18px;height:18px"></i> Book an appointment</a>
 </div>
-<span class="col-mot" style="left:50%;top:10px;transform:translateX(-55%) rotate(-5deg);font-size:clamp(1.9rem,3.6vw,3rem)">Blondie</span><div class="page-hero-img" data-aos="fade-up" data-aos-delay="150"><img src="images/coloration-hero.webp" alt="Balayage blond lumineux sur cheveux longs ondules, realise par Elody Bliss" width="900" height="1419" loading="eager" fetchpriority="high" decoding="async"></div>
+<div class="hero-col-photo"><div class="page-hero-img" data-aos="fade-up" data-aos-delay="150"><img src="images/coloration-hero.webp" alt="Balayage blond lumineux sur cheveux longs ondules, realise par Elody Bliss" width="900" height="1419" loading="eager" fetchpriority="high" decoding="async"></div>
+<span class="mot-sous-photo">Highlight your hair</span></div>
 </div></div>
 </section>
 <section><div class="container"><div class="page-content col-zone" data-aos="fade-up">
 <span class="filet"></span>
-<span class="col-mot" style="left:-2px;top:-58px;transform:rotate(-7deg);font-size:clamp(1.8rem,3.4vw,2.9rem)">Highlight<br><span style="margin-left:1.2em;display:inline-block">your hair</span></span>
 <h2 data-i18n="col_h2a">Natural coloring with plant-based pigments</h2>
 <p data-i18n="col_p1">The pigments used come from plants and natural materials, selected for their ability to penetrate the hair fiber without damaging it. The result is a deep, shiny and harmonious color. With each application, the hair fiber is nourished, the cuticles close and the hair's natural shine is amplified.</p>
 
-<span class="col-mot" style="right:0;top:-46px;transform:rotate(-6deg);font-size:clamp(1.8rem,3.4vw,2.9rem)">Blow-dry</span>
+<span class="col-mot" style="left:2%;top:-52px;transform:rotate(-9deg);font-size:clamp(1.9rem,3.6vw,3.1rem)">Blow-dry</span>
 <h2 data-i18n="col_h2b">Ombré hair</h2>
 <p data-i18n="col_p2">A natural, gradual color gradient, inspired by sunlight on the hair. No visible line: just a smooth transition between the roots and the ends, in tones chosen together.</p>
 
@@ -562,7 +570,10 @@ h1 .script{display:inline-block;font-size:1.45em;line-height:1.05;margin-bottom:
 <img src="images/img-28b-couleur.webp" alt="Balayage lumineux sur cheveux longs realise par Elody Bliss" loading="lazy" decoding="async" onclick="openLightbox(this)">
 <video controls playsinline preload="none" poster="videos/couleur-3-poster.webp" aria-label="Ombre hair cuivre, degrade naturel sans demarcation"><source src="videos/couleur-3.mp4" type="video/mp4"></video>
 </div>
-<span class="mot-script" style="display:block;text-align:right;font-size:clamp(2rem,4.2vw,3.4rem);transform:rotate(-6deg);transform-origin:right center;margin:6px 10px 0 0">Brunette</span>
+<div class="duo-mots">
+<span class="mot-script mot-blondie">Blondie</span>
+<span class="mot-script mot-brunette">Brunette</span>
+</div>
 
 <h2 data-i18n="col_h2c">Who is it for?</h2>
 <ul>
