@@ -471,7 +471,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 .res-visuel{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:stretch}
 .res-vertical{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--font-display),serif;font-optical-sizing:none;font-variation-settings:"opsz" 11;font-weight:500;text-transform:uppercase;letter-spacing:0.22em;font-size:clamp(0.95rem,1.8vw,1.35rem);color:#0D0B0B;white-space:nowrap;display:flex;align-items:center;justify-content:center}
 @media(max-width:600px){.res-visuel{grid-template-columns:auto 1fr;gap:10px}.res-vertical{letter-spacing:0.16em;font-size:0.85rem}}
-</style><style>/*titre-trois-lignes*/@media(max-width:700px){h1 .ligne{display:block}}</style><style>/*cta-lisible*/html body .cta-band p{color:#FBF6F2;text-shadow:0 1px 10px rgba(20,15,13,0.45)}</style></head>
+</style><style>/*titre-trois-lignes*/@media(max-width:700px){h1 .ligne{display:block}}</style><style>/*cta-lisible*/html body .cta-band p{color:#FBF6F2;text-shadow:0 1px 10px rgba(20,15,13,0.45)}</style><style>/*erreur-formulaire*/#form-error{display:none;margin-top:14px;padding:12px 14px;border-radius:8px;background:#FBE9E7;color:#8A2F22;font-size:0.92rem;line-height:1.5}</style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -928,15 +928,26 @@ var form=document.getElementById('contactForm');
 if(!form)return;
 form.addEventListener('submit',function(e){
 e.preventDefault();
-var data=new FormData(form);
-var body='';
-data.forEach(function(v,k){if(k!=='botcheck')body+=k+': '+v+'\n';});
-var subject=encodeURIComponent('Nouveau contact mariage - '+(data.get('Prénom')||'')+' '+(data.get('Nom')||''));
-var mailBody=encodeURIComponent(body);
-window.location.href='mailto:elodybliss@gmail.com?subject='+subject+'&body='+mailBody;
+var bouton=form.querySelector('button[type="submit"]');
+var libelle=bouton?bouton.innerHTML:'';
+if(bouton){bouton.disabled=true;bouton.innerHTML='Sending...';}
+var erreur=document.getElementById('form-error');
+if(erreur){erreur.style.display='none';erreur.textContent='';}
+fetch('/envoi-formulaire.php',{method:'POST',body:new FormData(form)})
+.then(function(r){return r.json().catch(function(){return{ok:false};});})
+.then(function(res){
+if(!res.ok)throw new Error(res.erreur||'envoi impossible');
 form.style.display='none';
 document.getElementById('form-success').style.display='block';
 window.lucide&&lucide.createIcons();
+})
+.catch(function(){
+if(bouton){bouton.disabled=false;bouton.innerHTML=libelle;}
+if(erreur){
+erreur.style.display='block';
+erreur.textContent="Your message could not be sent. Please write to elodybliss@gmail.com or send a text to +33 6 58 82 48 63.";
+}
+});
 });
 }
 

@@ -336,7 +336,7 @@ html body .cta-band p,html body footer p,html body footer li,html body footer a{
 <script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "WebSite", "name": "Elody Bliss Hair Spa", "url": "https://spa.elodybliss.fr/" }
 </script>
-</head>
+<style>/*erreur-formulaire*/#form-error{display:none;margin-top:14px;padding:12px 14px;border-radius:8px;background:#FBE9E7;color:#8A2F22;font-size:0.92rem;line-height:1.5}</style></head>
 <body>
 <a href="#main" class="sr-only">Aller au contenu principal</a>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -750,15 +750,25 @@ var form=document.getElementById('contactForm');
 if(!form)return;
 form.addEventListener('submit',function(e){
 e.preventDefault();
-var data=new FormData(form);
-var body='';
-data.forEach(function(v,k){if(k!=='botcheck')body+=k+': '+v+'\n';});
-var subject=encodeURIComponent('Nouveau contact mariage - '+(data.get('Prénom')||'')+' '+(data.get('Nom')||''));
-var mailBody=encodeURIComponent(body);
-window.location.href='mailto:elodybliss@gmail.com?subject='+subject+'&body='+mailBody;
+var bouton=form.querySelector('button[type="submit"]');
+var libelle=bouton?bouton.innerHTML:'';
+if(bouton){bouton.disabled=true;bouton.innerHTML='Sending...';}
+var erreur=document.getElementById('form-error');
+if(erreur){erreur.style.display='none';erreur.textContent='';}
+fetch('/envoi-formulaire.php',{method:'POST',body:new FormData(form)})
+.then(function(r){return r.json().catch(function(){return{ok:false};});})
+.then(function(res){
+if(!res.ok)throw new Error(res.erreur||'envoi impossible');
 form.style.display='none';
 document.getElementById('form-success').style.display='block';
 window.lucide&&lucide.createIcons();
+})
+.catch(function(){
+if(bouton){bouton.disabled=false;bouton.innerHTML=libelle;}
+if(erreur){
+erreur.style.display='block';
+erreur.textContent="Your message could not be sent. Please write to elodybliss@gmail.com or send a text to +33 6 58 82 48 63.";
+}
 });
 }
 
