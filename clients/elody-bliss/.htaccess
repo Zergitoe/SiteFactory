@@ -1,3 +1,11 @@
+# Fichiers sensibles : jamais servis, meme si PHP est indisponible
+<FilesMatch "^(config-mail.php|.htaccess)$">
+  Require all denied
+</FilesMatch>
+
+# La bibliotheque d envoi n a pas a etre appelee directement
+RedirectMatch 404 ^/lib/
+
 Options -Indexes
 DirectoryIndex index.html
 

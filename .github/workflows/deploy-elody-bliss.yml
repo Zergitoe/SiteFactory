@@ -35,6 +35,7 @@ jobs:
             set net:timeout 20;
             open -u '$UTILISATEUR','$MOTDEPASSE' sftp://$HOTE;
             mirror --reverse --delete --verbose=1 --parallel=4 \
+              --exclude-glob config-mail.php \
               --exclude-glob vercel.json \
               --exclude-glob serve.json \
               --exclude-glob package.json \
