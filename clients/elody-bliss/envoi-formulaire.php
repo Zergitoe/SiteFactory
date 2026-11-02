@@ -94,7 +94,7 @@ if (is_array($smtp) && !empty($smtp['utilisateur']) && !empty($smtp['motdepasse'
         $mail->send();
         echo json_encode(['ok' => true]);
         exit;
-    } catch (Exception $e) {
+    } catch (Throwable $e) {
         // on retombe sur l envoi simple plutot que de perdre la demande
     }
 }
