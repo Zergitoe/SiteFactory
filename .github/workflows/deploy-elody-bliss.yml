@@ -1,0 +1,53 @@
+name: Deploiement elodybliss.fr
+
+# Chaque modification du site part chez IONOS.
+# Le bouton "Run workflow" permet aussi de forcer un envoi complet.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'clients/elody-bliss/**'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-elody-bliss
+  cancel-in-progress: false
+
+jobs:
+  deploiement:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recuperer le depot
+        uses: actions/checkout@v4
+
+      - name: Installer lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Synchroniser le site avec l espace web
+        env:
+          HOTE: ${{ secrets.IONOS_HOST }}
+          UTILISATEUR: ${{ secrets.IONOS_USER }}
+          MOTDEPASSE: ${{ secrets.IONOS_PASSWORD }}
+        run: |
+          lftp -c "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            set net:timeout 20;
+            open -u '$UTILISATEUR','$MOTDEPASSE' sftp://$HOTE;
+            mirror --reverse --delete --verbose=1 --parallel=4 \
+              --exclude-glob vercel.json \
+              --exclude-glob serve.json \
+              --exclude-glob package.json \
+              --exclude-glob package-lock.json \
+              --exclude-glob README.md \
+              --exclude-glob GUIDE-SEO-RANKING.md \
+              clients/elody-bliss /wordpress;
+          "
+
+      - name: Verifier que le site repond
+        run: |
+          for page in "" editorial mariages coiffure-mariee maquillage-mariee coloration a-propos faq contact; do
+            code=$(curl -sS -o /dev/null -w '%{http_code}' "https://elodybliss.fr/$page")
+            printf '%-28s %s\n' "/$page" "$code"
+            [ "$code" = "200" ] || exit 1
+          done
